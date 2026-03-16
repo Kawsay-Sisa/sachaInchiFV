@@ -26,7 +26,7 @@ h5 {
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: black;
+  /* background-color: black; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -900,4 +900,51 @@ body.body_mission {
 
 [data-aos].aos-animate.value-card .value-icon {
   animation-play-state: running;
+}
+
+/* ========================================
+   Mission Statement - Split Layout
+   ======================================== */
+.mission-split {
+  position: relative;
+}
+
+.mission-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-image img {
+  transition: transform 0.8s ease-out;
+}
+
+.mission-image:hover img {
+  transform: scale(1.03);
+}
+
+.mission-content {
+  /* background: linear-gradient(
+    135deg,
+    rgba(245, 235, 224, 0.97) 0%,
+    rgba(249, 244, 239, 0.95) 100%
+  ); */
+}
+
+/* Mobile adjustments */
+@media (max-width: 1023px) {
+  .mission-content {
+    background: rgba(245, 235, 224, 0.98);
+  }
+
+  .mission-image {
+    order: -1;
+  }
+}
+
+/* Large screen enhancements */
+@media (min-width: 1024px) {
+  .mission-image {
+    position: sticky;
+    top: 0;
+  }
 }

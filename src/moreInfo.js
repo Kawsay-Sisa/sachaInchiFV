@@ -160,9 +160,9 @@ const translations = {
       p1Sub1: "We're here to ",
       p1Sub2: "fuel your body and feed your soul",
       p1Sub3:
-        "with the wholesome power of organic Sacha Inchi—nature's little superfood with a big heart. Every handful gives you clean, plant-based goodness while helping protect the Amazon and uplift sustainable farmers.",
-      p2: "For us, it's about going back to the simple, natural ways of caring for ourselves—without taking more than Mother Earth can give. Because what makes you stronger should also make the planet thrive. 💚 We believe in keeping it simple: real food, real love, and zero harm to Mother Earth. 💕",
-      p3: "Together, we can snack happy and grow a brighter future—one little seed at a time. 🌍🌸",
+        " with the wholesome power of organic Sacha Inchi—nature's little superfood with a big heart. Every handful gives you clean, plant-based goodness while helping protect the Amazon and uplift sustainable farmers.",
+      p2: "For us, it's about going back to the simple, natural ways of caring for ourselves—without taking more than Mother Earth can give. Because what makes you stronger should also make the planet thrive.",
+      p3: "Together, we can grow a brighter future—one little seed at a time.",
     },
 
     companyValues: {
@@ -257,12 +257,12 @@ const translations = {
     mission: {
       title: "Nutre Tu Cuerpo Desde El Interior Mientras Honras A La Tierra",
       subTitle: "Nuestra Misión",
-      p1Sub1: "Estamos aquí para",
+      p1Sub1: "Estamos aquí para ",
       p1Sub2: "nutrir tu cuerpo y alimentar tu alma",
       p1Sub3:
-        "con el poder nutritivo del Sacha Inchi orgánico: el pequeño superalimento de la naturaleza con un gran corazón. Cada puñado te ofrece bondad pura y vegetal, al tiempo que contribuye a proteger el Amazonas y a elevar a los agricultores sostenibles.",
-      p2: "Para nosotros, la clave es volver a las formas simples y naturales de cuidarnos, sin exigir más de lo que la Madre Tierra puede darnos. Porque aquello que te fortalece, también debe permitir que el planeta prospere. 💚 Creemos en la simplicidad: comida real, amor sincero y cero impacto negativo en la Madre Tierra. 💕",
-      p3: "Juntos, podemos disfrutar de snacks felices y cultivar un futuro más brillante, una pequeña semilla a la vez. 🌍🌸",
+        " con el poder nutritivo del Sacha Inchi orgánico: el pequeño superalimento de la naturaleza con un gran corazón. Cada puñado te ofrece bondad pura y vegetal, al tiempo que contribuye a proteger el Amazonas y a elevar a los agricultores sostenibles.",
+      p2: "Para nosotros, la clave es volver a las formas simples y naturales de cuidarnos, sin exigir más de lo que la Madre Tierra puede darnos. Porque aquello que te fortalece, también debe permitir que el planeta prospere.",
+      p3: "Juntos, podemos cultivar un futuro más brillante, una pequeña semilla a la vez.",
     },
 
     companyValues: {

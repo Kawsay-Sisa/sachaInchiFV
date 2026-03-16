@@ -178,7 +178,7 @@
         </div>
 
         <!-- Values Container with Tree -->
-        <div class="relative w-full mx-auto px-4 sm:px-6 md:px-8 my-20">
+        <div class="relative w-full mx-auto px-4 sm:px-6 md:px-8 my-24">
           <!-- Tree with Values Inside -->
           <div
             class="tree-container relative mx-auto flex justify-center items-center"
@@ -558,82 +558,83 @@
           </div>
         </div>
       </section>
+      <!-- Mission Statement - Split Layout -->
       <div
-        class="min-h-screen flex items-center min-w-full justify-center bg-sandy-gradient overflow-hidden p-3 lg:p-8 xl:p-12"
+        id="missionStatement"
+        class="mission-split min-h-screen flex flex-col lg:flex-row items-center w-full bg-sandy-gradient overflow-hidden"
       >
-        <div class="missionStatement relative lg:max-w-[90%] rounded-[40px]">
+        <!-- Left: Nature Image -->
+        <div
+          class="mission-image w-full lg:w-1/2 h-64 sm:h-80 lg:h-screen relative"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img
+            src="/assets/img/Sacha-Inchi-plantas.webp"
+            alt="Sacha Inchi plants in the Amazon"
+            class="w-full h-full object-cover"
+          />
           <div
-            class="bg-white shadow-xl p-2 lg:p-10 relative overflow-hidden glass-card"
-          >
-            <!-- Subtle decoration -->
-            <div
-              class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-green-100 to-transparent rounded-full opacity-30 -mr-32 -mt-32"
-            ></div>
-            <div
-              class="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-yellow-100 to-transparent rounded-full opacity-30 -ml-32 -mb-32"
-            ></div>
+            class="absolute inset-0 bg-gradient-to-r from-transparent to-[#f5ebe0]/40 hidden lg:block"
+          ></div>
+        </div>
 
-            <div class="relative z-10 space-y-10">
-              <!-- Title -->
-              <div class="text-center text-shadow-strong">
-                <h1
-                  class="text-3xl lg:text-5xl font-bold tracking-tight mb-4 text-sand"
-                  data-role="subTitle"
-                >
-                  Our Mission
-                </h1>
-                <div
-                  class="w-24 h-1 bg-gradient-to-r from-[#f9ecd6] to-[#f4e3c1] mx-auto rounded-full"
-                ></div>
-              </div>
-
-              <!-- Content -->
-              <div
-                class="space-y-8 text-center max-w-3xl mx-auto text-shadow-strong"
-              >
-                <p
-                  class="text-xl lg:text-2xl 2xl:text-3xl leading-relaxed text-cream"
-                  style="font-weight: 500"
-                >
-                  <span data-role="p1Sub1"> We're here to </span>
-                  <strong
-                    class="font-semibold text-goldTitle"
-                    data-role="p1Sub2"
-                    >fuel your body and feed your soul</strong
-                  >
-                  <span data-role="p1Sub3">
-                    with the wholesome power of organic Sacha Inchi—nature's
-                    little superfood with a big heart. Every handful gives you
-                    clean, plant-based goodness while helping protect the Amazon
-                    and uplift sustainable farmers.
-                  </span>
-                </p>
-
-                <div class="text-xl">🌿</div>
-
-                <p
-                  class="text-xl lg:text-2xl leading-relaxed text-cream"
-                  style="font-weight: 500"
-                  data-role="p2"
-                >
-                  For us, it's about going back to the simple, natural ways of
-                  caring for ourselves—without taking more than Mother Earth can
-                  give. Because what makes you stronger should also make the
-                  planet thrive. 💚
-                </p>
-
-                <div class="pt-8">
-                  <p
-                    class="text-2xl lg:text-3xl font-semibold leading-relaxed text-sand"
-                    data-role="p3"
-                  >
-                    Together, we can snack happy and grow a brighter future—one
-                    little seed at a time. 🌍🌸
-                  </p>
-                </div>
-              </div>
-            </div>
+        <!-- Right: Mission Content -->
+        <div
+          class="mission-content w-full lg:w-1/2 px-6 lg:px-12 xl:px-20 py-12 lg:py-0 flex flex-col justify-center min-h-[60vh] lg:min-h-screen "
+        >
+          <!-- Title -->
+          <div data-aos="fade-up" data-aos-delay="200">
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold text-navyBlue mb-3"
+              data-role="subTitle"
+            >
+              Our Mission
+            </h2>
+            <div class="w-16 h-1 bg-earthyGreen rounded-full mb-8"></div>
           </div>
+
+          <!-- Paragraph 1 -->
+          <p
+            class="text-lg lg:text-xl text-petroleumBlue leading-relaxed mb-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <span data-role="p1Sub1">We're here to </span>
+            <strong
+              class="text-earthyGreen font-semibold"
+              data-role="p1Sub2"
+              >fuel your body and feed your soul</strong
+            >
+            <span data-role="p1Sub3">
+              with the wholesome power of organic Sacha Inchi—nature's little
+              superfood with a big heart. Every handful gives you clean,
+              plant-based goodness while helping protect the Amazon and uplift
+              sustainable farmers.
+            </span>
+          </p>
+
+          <!-- Paragraph 2 -->
+          <p
+            class="text-lg lg:text-xl text-petroleumBlue leading-relaxed mb-8"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-role="p2"
+          >
+            For us, it's about going back to the simple, natural ways of caring
+            for ourselves—without taking more than Mother Earth can give.
+            Because what makes you stronger should also make the planet thrive.
+          </p>
+
+          <!-- Closing Statement -->
+          <p
+            class="text-xl lg:text-2xl text-navyBlue font-semibold leading-relaxed"
+            data-aos="fade-up"
+            data-aos-delay="800"
+            data-role="p3"
+          >
+            Together, we can grow a brighter future—one little seed at a time.
+          </p>
         </div>
       </div>
     </section>
