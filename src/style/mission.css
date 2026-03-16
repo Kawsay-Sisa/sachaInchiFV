@@ -815,3 +815,89 @@ body.body_mission {
     overflow: hidden;
   }
 }
+
+/* Company Values Section */
+#companyValues {
+  scroll-margin-top: 64px;
+}
+
+.tree-container img {
+  transition: transform 0.8s ease-in-out;
+}
+
+.tree-container:hover img {
+  transform: scale(1.03);
+}
+
+.value-item {
+  transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+}
+
+.value-item:hover .value-icon {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.value-icon {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .value-item {
+    width: 8rem !important;
+  }
+  .value-item p {
+    font-size: 0.7rem;
+  }
+  .value-item h3 {
+    font-size: 0.875rem;
+  }
+}
+
+/* Sequential Value Animations */
+@keyframes subtleFloat {
+  0%, 100% { transform: translateY(0) scale(1.1); }
+  50% { transform: translateY(-5px) scale(1.1); }
+}
+
+@keyframes iconPulse {
+  0% { transform: scale(0.8); opacity: 0; }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.value-item .value-icon {
+  animation: iconPulse 0.6s ease-out forwards;
+  animation-play-state: paused;
+}
+
+[data-aos].aos-animate .value-icon {
+  animation-play-state: running;
+}
+
+.value-item:hover .value-icon {
+  animation: subtleFloat 2s ease-in-out infinite;
+}
+
+/* Mobile value cards animation */
+.value-card .value-icon {
+  animation: iconPulse 0.6s ease-out forwards;
+  animation-play-state: paused;
+}
+
+[data-aos].aos-animate.value-card .value-icon {
+  animation-play-state: running;
+}
