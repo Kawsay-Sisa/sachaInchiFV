@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="shortcut icon"
-      href="../../assets/img/sacha-inchi-grano.webp"
+      href="../../assets/img/InchiChar.webp"
       type="image/x-icon"
     />
     <meta
@@ -14,8 +15,8 @@
     />
     <title>Mission</title>
     <script type="module" crossorigin src="https://arenascode.github.io/sachaInchiFV/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-    <script type="module" crossorigin src="https://arenascode.github.io/sachaInchiFV/assets/moreInfo-Bi39Yf4b.js"></script>
-    <link rel="stylesheet" crossorigin href="https://arenascode.github.io/sachaInchiFV/assets/mission-CClXqt30.css">
+    <script type="module" crossorigin src="https://arenascode.github.io/sachaInchiFV/assets/moreInfo-DS9-gC4g.js"></script>
+    <link rel="stylesheet" crossorigin href="https://arenascode.github.io/sachaInchiFV/assets/mission-C5ftljcp.css">
   </head>
   <body class="body_mission">
     <nav
@@ -28,10 +29,14 @@
         >
           <div class="flex-shrink-0">
             <a href="/">
-              <h1 class="lg:text-5xl text-3xl font-bold logo">Omaré</h1>
+              <h1 class="lg:text-5xl text-3xl font-bold logo px-1">
+                Omaré <sup class="text-lg align-super">™</sup>
+              </h1>
             </a>
           </div>
-          <div class="flex gap-3 sm:gap-1 align-middle justify-center text-sand">
+          <div
+            class="flex gap-3 sm:gap-1 align-middle justify-center text-sand"
+          >
             <div
               class="ml-10 sm:ml-0 hidden items-baseline space-x-4 sm:space-x-0 sm:block sm:items-center sm:flex-nowrap"
             >
@@ -42,16 +47,16 @@
                 >Home</a
               >
               <a
-                href="#"
-                class="hover:text-goldTitle px-3 py-2 rounded-md xl:text-xl sm:text-lg md:text-lg text-sm font-medium"
-                data-role="aboutUs"
-                >Mission</a
-              >
-              <a
                 href="/src/pages/about.html"
                 class="hover:text-goldTitle px-3 py-2 rounded-md xl:text-xl sm:text-lg md:text-lg text-sm font-medium"
                 data-role="moreInfo"
                 >Learn More</a
+              >
+              <a
+                href="#"
+                class="hover:text-goldTitle px-3 py-2 rounded-md xl:text-xl sm:text-lg md:text-lg text-sm font-medium"
+                data-role="aboutUs"
+                >Mission</a
               >
             </div>
             <div class="language-switch self-center mr-2">
@@ -99,26 +104,27 @@
                 <li>
                   <a href="#" class="" data-role="aboutUs">Mission</a>
                 </li>
-                <li class="flex gap-8">
+                <!-- <li class="flex gap-8">
                   <div id="IGRedirect" class="w-8">
                     <a href="https://www.instagram.com" target="_blank"
-                      ><img src="https://arenascode.github.io/sachaInchiFV/assets/icons/instagram.webp" alt="IG"
+                      ><img src="/assets/icons/instagram.webp" alt="IG"
                     /></a>
                   </div>
                   <div id="WTSPRedirect" class="w-8">
                     <a href="https://wa.link" target="_blank"
                       ><img
-                        src="https://arenascode.github.io/sachaInchiFV/assets/icons/whatsapp.webp"
+                        src="/assets/icons/whatsapp.webp"
                         alt="whatsappIcon"
                     /></a>
                   </div>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
         </div>
       </div>
     </nav>
+
     <!-- Mission Statement Section -->
     <section
       class="relative w-full flex flex-col text-cream overflow-hidden"
@@ -141,61 +147,537 @@
           />
         </div>
       </div>
-      <div class="min-h-screen flex items-center min-w-full justify-center bg-sandy-gradient overflow-hidden p-3 lg:p-8 xl:p-12">
-        <div class="missionStatement relative lg:max-w-[90%] rounded-[40px]">
-            
-            <div class="bg-white shadow-xl p-2 lg:p-10 relative overflow-hidden glass-card ">
-                
-                <!-- Subtle decoration -->
-                <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-green-100 to-transparent rounded-full opacity-30 -mr-32 -mt-32"></div>
-                <div class="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-yellow-100 to-transparent rounded-full opacity-30 -ml-32 -mb-32"></div>
-                
-                <div class="relative z-10 space-y-10">
-                    
-                    <!-- Title -->
-                    <div class="text-center text-shadow-strong">
-                        <h1 class="text-3xl lg:text-5xl font-bold tracking-tight mb-4 text-sand" data-role="subTitle">
-                            Our Mission
-                        </h1>
-                        <div class="w-24 h-1 bg-gradient-to-r from-[#f9ecd6] to-[#f4e3c1] mx-auto rounded-full"></div>
-                    </div>
-                    
-                    <!-- Content -->
-                    <div class="space-y-8 text-center max-w-3xl mx-auto text-shadow-strong">
-                        <p class="text-xl lg:text-2xl 2xl:text-3xl leading-relaxed text-cream" style="font-weight: 500;">
-                          <span data-role="p1Sub1">
-                            We're here to 
-                          </span>
-                            <strong class="font-semibold text-goldTitle" data-role="p1Sub2">fuel your body and feed your soul</strong>
-                            <span data-role="p1Sub3">
-                              with the wholesome
-                            power of organic Sacha Inchi—nature's little superfood with a big
-                            heart. Every handful gives you clean, plant-based goodness while
-                            helping protect the Amazon and uplift sustainable farmers.
-                            </span> 
-                        </p>
-
-                        <div class="text-xl">🌿</div>
-
-                        <p class="text-xl lg:text-2xl leading-relaxed text-cream" style="font-weight: 500;" data-role="p2">
-                            For us, it's about going back to the simple, natural ways of caring
-                            for ourselves—without taking more than Mother Earth can give.
-                            Because what makes you stronger should also make the planet thrive. 💚
-                        </p>
-
-                        <div class="pt-8">
-                            <p class="text-2xl lg:text-3xl font-semibold leading-relaxed text-sand" data-role="p3">
-                                Together, we can snack happy and grow a brighter future—one little
-                                seed at a time. 🌍🌸
-                            </p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
+      <section
+        id="companyValues"
+        class="relative w-full min-h-screen flex flex-col items-center justify-center bg-sandy-gradient py-6 pb-0 lg:py-0 lg:pt-10"
+      >
+        <!-- Section Header -->
+        <div class="text-center w-full z-10 px-4 mb-8 lg:mb-12">
+          <h2
+            class="text-3xl lg:text-4xl xl:text-5xl font-bold text-navyBlue w-[70%] mx-auto"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-role="valuesTitle"
+          >
+            Rooted in tradition, growing towards a sustainable future
+          </h2>
+          <p
+            class="text-lg lg:text-xl xl:text-2xl text-cerulean max-w-2xl mx-auto mt-5"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-role="valuesSubtitle"
+          >
+            Rooted in tradition, growing towards a sustainable future
+          </p>
+          <p
+            class="text-base lg:text-lg xl:text-xl text-petroleumBlue max-w-4xl mx-auto mt-6 leading-relaxed"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-role="valuesDescription"
+          >
+            We believe in the resilient wisdom of our ancestors—a philosophy
+            where nature is both healer and provider. Our commitment to
+            transparency means offering you pure, organic nourishment without
+            processing or additives. Every seed carries the vital energy of the
+            Amazon, connecting you to a natural way of living that honors the
+            earth and its ancient rhythms. This is food as medicine, respecting
+            the sacred balance between humanity and nature.
+          </p>
         </div>
-    </div>
+
+        <!-- Values Container with Tree -->
+        <div class="relative w-full mx-auto px-4 sm:px-6 md:px-8 my-24">
+          <!-- Tree with Values Inside -->
+          <div
+            class="tree-container relative mx-auto flex justify-center items-center"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
+            <img
+              src="https://arenascode.github.io/sachaInchiFV/assets/img/guayacanTree.webp"
+              alt="Guayacan Tree - Symbol of Our Values"
+              class="w-80 sm:w-[22rem] lg:w-[30rem] xl:w-[62rem] 2xl:w-[42rem] h-auto drop-shadow-xl -mt-14"
+            />
+
+            <!-- Value 1: Sustainability - Top Left (near canopy) -->
+            <div
+              class="value-item absolute hidden lg:flex flex-col items-center text-center top-[-20%] left-[20%] w-32 lg:w-36 xl:w-40"
+              data-aos="fade-right"
+              data-aos-delay="0"
+            >
+              <div
+                class="value-icon w-12 h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 rounded-full bg-earthyGreen/20 flex items-center justify-center mb-2 shadow-lg"
+              >
+                <svg
+                  class="w-6 h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8 text-earthyGreen"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="text-sm lg:text-base xl:text-lg font-bold text-navyBlue"
+                data-role="value1Title"
+              >
+                Sustainability
+              </h3>
+              <p
+                class="text-xs lg:text-sm text-petroleumBlue mt-1 hidden lg:block"
+                data-role="value1Desc"
+              >
+                Protecting the Amazon
+              </p>
+            </div>
+
+            <!-- Value 2: Quality - Top Right (near canopy) -->
+            <div
+              class="value-item absolute hidden lg:flex flex-col items-center text-center top-[-20%] right-[20%] w-32 lg:w-36 xl:w-40"
+              data-aos="fade-left"
+              data-aos-delay="150"
+            >
+              <div
+                class="value-icon w-12 h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 rounded-full bg-goldTitle/30 flex items-center justify-center mb-2 shadow-lg"
+              >
+                <svg
+                  class="w-6 h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8 text-goldSecondary"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="text-sm lg:text-base xl:text-lg font-bold text-navyBlue"
+                data-role="value2Title"
+              >
+                Quality
+              </h3>
+              <p
+                class="text-xs lg:text-sm text-petroleumBlue mt-1 hidden lg:block"
+                data-role="value2Desc"
+              >
+                Premium organic products
+              </p>
+            </div>
+
+            <!-- Value 3: Community - Middle Left (near branches) -->
+            <div
+              class="value-item absolute hidden lg:flex flex-col items-center text-center top-[31%] left-[14%] w-32 lg:w-36 xl:w-40"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              <div
+                class="value-icon w-12 h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 rounded-full bg-cerulean/20 flex items-center justify-center mb-2 shadow-lg"
+              >
+                <svg
+                  class="w-6 h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8 text-cerulean"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="text-sm lg:text-base xl:text-lg font-bold text-navyBlue"
+                data-role="value3Title"
+              >
+                Community
+              </h3>
+              <p
+                class="text-xs lg:text-sm text-petroleumBlue mt-1 hidden lg:block"
+                data-role="value3Desc"
+              >
+                Supporting local farmers
+              </p>
+            </div>
+
+            <!-- Value 4: Authenticity - Middle Right (near branches) -->
+            <div
+              class="value-item absolute hidden lg:flex flex-col items-center text-center top-[32%] right-[14%] w-32 lg:w-36 xl:w-40"
+              data-aos="fade-left"
+              data-aos-delay="450"
+            >
+              <div
+                class="value-icon w-12 h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 rounded-full bg-warmSandy flex items-center justify-center mb-2 shadow-lg"
+              >
+                <svg
+                  class="w-6 h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8 text-navyBlue"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="text-sm lg:text-base xl:text-lg font-bold text-navyBlue"
+                data-role="value4Title"
+              >
+                Authenticity
+              </h3>
+              <p
+                class="text-xs lg:text-sm text-petroleumBlue mt-1 hidden lg:block"
+                data-role="value4Desc"
+              >
+                True to our roots
+              </p>
+            </div>
+
+            <!-- Value 5: Wellness - Bottom Left (near trunk) -->
+            <div
+              class="value-item absolute hidden lg:flex flex-col items-center text-center bottom-[-10%] left-[22%] w-32 lg:w-36 xl:w-40"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div
+                class="value-icon w-12 h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 rounded-full bg-earthyGreen/20 flex items-center justify-center mb-2 shadow-lg"
+              >
+                <svg
+                  class="w-6 h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8 text-earthyGreen"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="text-sm lg:text-base xl:text-lg font-bold text-navyBlue"
+                data-role="value5Title"
+              >
+                Wellness
+              </h3>
+              <p
+                class="text-xs lg:text-sm text-petroleumBlue mt-1 hidden lg:block"
+                data-role="value5Desc"
+              >
+                Nourishing naturally
+              </p>
+            </div>
+
+            <!-- Value 6: Nature - Bottom Right (near trunk) -->
+            <div
+              class="value-item absolute hidden lg:flex flex-col items-center text-center bottom-[-10%] right-[22%] w-32 lg:w-36 xl:w-40"
+              data-aos="fade-up"
+              data-aos-delay="750"
+            >
+              <div
+                class="value-icon w-12 h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 rounded-full bg-goldTitle/30 flex items-center justify-center mb-2 shadow-lg"
+              >
+                <svg
+                  class="w-6 h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8 text-goldSecondary"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="text-sm lg:text-base xl:text-lg font-bold text-navyBlue"
+                data-role="value6Title"
+              >
+                Nature
+              </h3>
+              <p
+                class="text-xs lg:text-sm text-petroleumBlue mt-1 hidden lg:block"
+                data-role="value6Desc"
+              >
+                Harmony with environment
+              </p>
+            </div>
+          </div>
+
+          <!-- Mobile Values Grid -->
+          <div
+            class="lg:hidden grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 mt-8 px-2"
+          >
+            <!-- Mobile Value 1 -->
+            <div
+              class="value-card flex flex-col items-center text-center p-4 bg-cream/80 rounded-xl shadow-md"
+              data-aos="fade-up"
+              data-aos-delay="0"
+            >
+              <div
+                class="value-icon w-12 h-12 rounded-full bg-earthyGreen/20 flex items-center justify-center mb-2"
+              >
+                <svg
+                  class="w-6 h-6 text-earthyGreen"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="text-sm font-bold text-navyBlue"
+                data-role="value1TitleMobile"
+              >
+                Sustainability
+              </h3>
+            </div>
+
+            <!-- Mobile Value 2 -->
+            <div
+              class="value-card flex flex-col items-center text-center p-4 bg-cream/80 rounded-xl shadow-md"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div
+                class="value-icon w-12 h-12 rounded-full bg-goldTitle/30 flex items-center justify-center mb-2"
+              >
+                <svg
+                  class="w-6 h-6 text-goldSecondary"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="text-sm font-bold text-navyBlue"
+                data-role="value2TitleMobile"
+              >
+                Quality
+              </h3>
+            </div>
+
+            <!-- Mobile Value 3 -->
+            <div
+              class="value-card flex flex-col items-center text-center p-4 bg-cream/80 rounded-xl shadow-md"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="value-icon w-12 h-12 rounded-full bg-cerulean/20 flex items-center justify-center mb-2"
+              >
+                <svg
+                  class="w-6 h-6 text-cerulean"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="text-sm font-bold text-navyBlue"
+                data-role="value3TitleMobile"
+              >
+                Community
+              </h3>
+            </div>
+
+            <!-- Mobile Value 4 -->
+            <div
+              class="value-card flex flex-col items-center text-center p-4 bg-cream/80 rounded-xl shadow-md"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div
+                class="value-icon w-12 h-12 rounded-full bg-warmSandy flex items-center justify-center mb-2"
+              >
+                <svg
+                  class="w-6 h-6 text-navyBlue"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="text-sm font-bold text-navyBlue"
+                data-role="value4TitleMobile"
+              >
+                Authenticity
+              </h3>
+            </div>
+
+            <!-- Mobile Value 5 -->
+            <div
+              class="value-card flex flex-col items-center text-center p-4 bg-cream/80 rounded-xl shadow-md"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div
+                class="value-icon w-12 h-12 rounded-full bg-earthyGreen/20 flex items-center justify-center mb-2"
+              >
+                <svg
+                  class="w-6 h-6 text-earthyGreen"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="text-sm font-bold text-navyBlue"
+                data-role="value5TitleMobile"
+              >
+                Wellness
+              </h3>
+            </div>
+
+            <!-- Mobile Value 6 -->
+            <div
+              class="value-card flex flex-col items-center text-center p-4 bg-cream/80 rounded-xl shadow-md"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div
+                class="value-icon w-12 h-12 rounded-full bg-goldTitle/30 flex items-center justify-center mb-2"
+              >
+                <svg
+                  class="w-6 h-6 text-goldSecondary"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="text-sm font-bold text-navyBlue"
+                data-role="value6TitleMobile"
+              >
+                Nature
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider hidden lg:block lg:self-center my-5 justify-center">
+          <div class="flex items-center gap-2">
+            <div
+              class="w-56 h-[2.5px] bg-gradient-to-r from-transparent via-[#f6ba02] to-transparent"
+            ></div>
+            <div
+              class="w-2 h-2 rounded-full"
+              style="background-color: #f6ba02"
+            ></div>
+            <div
+              class="w-56 h-[2.5px] bg-gradient-to-r from-transparent via-[#f6ba02] to-transparent"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission Statement - Split Layout -->
+      <div
+        id="missionStatement"
+        class="mission-split min-h-screen flex flex-col lg:flex-row items-center w-full overflow-hidden"
+      >
+        <!-- Left: Nature Image -->
+        <div
+          class="mission-image w-full lg:w-1/2 h-64 sm:h-80 lg:h-screen relative"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img
+            src="https://arenascode.github.io/sachaInchiFV/assets/img/Sacha-Inchi-plantas.webp"
+            alt="Sacha Inchi plants in the Amazon"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-transparent to-[#f5ebe0]/40 hidden lg:block"
+          ></div>
+        </div>
+
+        <!-- Right: Mission Content -->
+        <div
+          class="mission-content w-full lg:w-1/2 px-6 lg:px-12 xl:px-20 py-12 lg:py-0 flex flex-col justify-start min-h-[60vh] lg:min-h-screen relative"
+        >
+          <!-- <div class="flex justify-center mb-10">
+            <div class="flex items-center gap-2">
+              <div
+                class="w-56 h-[2.5px] bg-gradient-to-r from-transparent via-[#f6ba02] to-transparent"
+              ></div>
+              <div
+                class="w-2 h-2 rounded-full"
+                style="background-color: #f6ba02"
+              ></div>
+              <div
+                class="w-56 h-[2.5px] bg-gradient-to-r from-transparent via-[#f6ba02] to-transparent"
+              ></div>
+            </div>
+          </div> -->
+          <!-- Title -->
+          <div data-aos="fade-up" data-aos-delay="200">
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold text-navyBlue mb-3"
+              data-role="subTitle"
+            >
+              Our Mission
+            </h2>
+            <div class="w-16 h-1 bg-earthyGreen rounded-full mb-8"></div>
+          </div>
+
+          <!-- Paragraph 1 -->
+          <p
+            class="text-lg lg:text-xl text-petroleumBlue leading-relaxed mb-6"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <span data-role="p1Sub1">We're here to </span>
+            <strong class="text-earthyGreen font-semibold" data-role="p1Sub2"
+              >fuel your body and feed your soul</strong
+            >
+            <span data-role="p1Sub3">
+              with the wholesome power of organic Sacha Inchi—nature's little
+              superfood with a big heart. Every handful gives you clean,
+              plant-based goodness while helping protect the Amazon and uplift
+              sustainable farmers.
+            </span>
+          </p>
+
+          <!-- Paragraph 2 -->
+          <p
+            class="text-lg lg:text-xl text-petroleumBlue leading-relaxed mb-8"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-role="p2"
+          >
+            For us, it's about going back to the simple, natural ways of caring
+            for ourselves—without taking more than Mother Earth can give.
+            Because what makes you stronger should also make the planet thrive.
+          </p>
+
+          <!-- Closing Statement -->
+          <p
+            class="text-xl lg:text-2xl text-navyBlue font-semibold leading-relaxed"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-role="p3"
+          >
+            Together, we can grow a brighter future—one little seed at a time.
+          </p>
+          <img src="https://arenascode.github.io/sachaInchiFV/assets/img/InchiChar.webp" alt="Omare Character" class="w-[250px] h-auto md:mt-8 lg:w-52 absolute right-0 md:right-14 bottom-10 md:bottom-20" data-aos="zoom-in" data-aos-delay="1000">
+        </div>
+      </div>
     </section>
+
+    <!-- Company Values Section -->
+
     <footer
       id="footer"
       class="bg-darkGreen text-sand py-5 pl-8 flex flex-col justify-center content-center"
@@ -207,8 +689,13 @@
         <div
           class="mb-6 md:mb-0 pr-6 md:border-r md:border-gray-400 md:w-1/3 flex-1"
         >
-          <h2 class="text-2xl 2xl:text-3xl font-bold text-nowrap">Sacha Inchi</h2>
-          <p class="text-lg 2xl:text-2xl xl:text-xl sm:text-sm mt-2" data-role="description">
+          <h2 class="text-2xl 2xl:text-3xl font-bold text-nowrap">
+            Sacha Inchi
+          </h2>
+          <p
+            class="text-lg 2xl:text-2xl xl:text-xl sm:text-sm mt-2"
+            data-role="description"
+          >
             Discover the natural benefits of Sacha Inchi, the Amazonian treasure
             for your health and wellness.
           </p>
@@ -222,16 +709,11 @@
             class="space-y-2 items-center justify-between gap-4 text-nowrap xl:text-xl 2xl:text-2xl"
           >
             <li>
-              <a href="/" class="hover:text-goldTitle transition" data-role="home"
-                >Home</a
-              >
-            </li>
-            <li>
               <a
-                href="#"
+                href="/"
                 class="hover:text-goldTitle transition"
-                data-role="aboutUs"
-                >Mission</a
+                data-role="home"
+                >Home</a
               >
             </li>
             <li>
@@ -240,6 +722,14 @@
                 class="hover:text-goldTitle transition"
                 data-role="moreInfo"
                 >Learn More</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-goldTitle transition"
+                data-role="aboutUs"
+                >Mission</a
               >
             </li>
 
@@ -255,7 +745,7 @@
         </div>
 
         <!-- Social Media Links -->
-        <div>
+        <!-- <div>
           <h3
             class="xl:text-xl 2xl:text-2xl text-lg font-semibold mb-4"
             data-role="followUs"
@@ -263,7 +753,6 @@
             Follow Us
           </h3>
           <div class="flex xl:space-x-6 space-x-4">
-            <!-- Facebook -->
             <a
               href="https://facebook.com"
               target="_blank"
@@ -280,7 +769,6 @@
                 />
               </svg>
             </a>
-            <!-- Twitter -->
             <a
               href="https://twitter.com"
               target="_blank"
@@ -297,7 +785,6 @@
                 />
               </svg>
             </a>
-            <!-- Instagram -->
             <a
               href="https://instagram.com"
               target="_blank"
@@ -320,13 +807,22 @@
               </svg>
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <!-- Footer Bottom -->
       <div class="mt-8 text-center xl:text-lg text-sm text-warmSandy">
-        © 2025 Omaré | All rights reserved
+        © 2026 Omaré™ | All rights reserved
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease-out-cubic",
+        once: true,
+        offset: 50,
+      });
+    </script>
   </body>
 </html>
