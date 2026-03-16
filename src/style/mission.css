@@ -790,20 +790,19 @@ body.body_mission {
       no-repeat;
     background-size: cover;
   }
-  .missionStatement::before {
+  /* .missionStatement::before {
     content: "";
     height: 80px;
     width: 80px;
     background-image: url("/assets/img/InchiChar.webp");
     position: absolute;
-    /* opacity: 0.15; */
     top: 0;
     left: 73%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 3;
-  }
+  } */
   body.es .missionStatement::before {
     left: 76%;
   }
@@ -930,21 +929,370 @@ body.body_mission {
   ); */
 }
 
-/* Mobile adjustments */
-@media (max-width: 1023px) {
+/* ========================================
+   Mission Section - Responsive Breakpoints
+   ======================================== */
+
+/* Mobile - max 480px */
+@media (max-width: 480px) {
+  .mission-split {
+    min-height: auto;
+  }
+
+  .mission-image {
+    height: 200px;
+    order: -1;
+  }
+
   .mission-content {
+    padding: 1.5rem 1rem;
+    min-height: auto;
     background: rgba(245, 235, 224, 0.98);
   }
 
-  .mission-image {
-    order: -1;
+  .mission-content h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .mission-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .mission-content p:last-of-type {
+    font-size: 1.1rem;
+  }
+
+  .mission-content img[alt="Omare Character"] {
+    width: 80px;
+    bottom: 5px;
+    right: 5px;
   }
 }
 
-/* Large screen enhancements */
-@media (min-width: 1024px) {
+/* Small Tablet - 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .mission-split {
+    min-height: auto;
+  }
+
   .mission-image {
+    height: 280px;
+    order: -1;
+  }
+
+  .mission-content {
+    padding: 2rem 1.5rem;
+    min-height: auto;
+    background: rgba(245, 235, 224, 0.98);
+  }
+
+  .mission-content h2 {
+    font-size: 2rem;
+  }
+
+  .mission-content p {
+    font-size: 1.05rem;
+  }
+
+  .mission-content p:last-of-type {
+    font-size: 1.15rem;
+  }
+
+  .mission-content img[alt="Omare Character"] {
+    width: 100px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+/* Tablet - 769px to 960px */
+@media (min-width: 769px) and (max-width: 960px) {
+  .mission-split {
+    min-height: auto;
+  }
+
+  .mission-image {
+    height: 320px;
+    order: -1;
+  }
+
+  .mission-content {
+    padding: 2.5rem 2rem;
+    min-height: auto;
+    background: rgba(245, 235, 224, 0.98);
+  }
+
+  .mission-content h2 {
+    font-size: 2.25rem;
+  }
+
+  .mission-content p {
+    font-size: 1.1rem;
+  }
+
+  .mission-content p:last-of-type {
+    font-size: 1.25rem;
+  }
+
+  .mission-content img[alt="Omare Character"] {
+    width: 120px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+/* Laptop - 961px to 1024px */
+@media (min-width: 961px) and (max-width: 1024px) {
+  .mission-split {
+    flex-direction: row;
+    min-height: 100vh;
+  }
+
+  .mission-image {
+    width: 45%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    order: 0;
+  }
+
+  .mission-content {
+    width: 55%;
+    padding: 3rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(245, 235, 224, 0.98);
+  }
+
+  .mission-content h2 {
+    font-size: 2.25rem;
+  }
+
+  .mission-content p {
+    font-size: 1.1rem;
+  }
+
+  .mission-content p:last-of-type {
+    font-size: 1.3rem;
+  }
+
+  .mission-content img[alt="Omare Character"] {
+    width: 140px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* Desktop - 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .mission-split {
+    flex-direction: row;
+    min-height: 100vh;
+  }
+
+  .mission-image {
+    width: 50%;
+    height: 100vh;
     position: sticky;
     top: 0;
   }
+
+  .mission-content {
+    width: 50%;
+    padding: 3rem 2.5rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(245, 235, 224, 0.98);
+  }
+
+  .mission-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .mission-content p {
+    font-size: 1.15rem;
+  }
+
+  .mission-content p:last-of-type {
+    font-size: 1.35rem;
+  }
+
+  .mission-content img[alt="Omare Character"] {
+    width: 160px;
+    bottom: 30px;
+    right: 25px;
+  }
 }
+
+/* XL Desktop - 1281px to 1440px */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .mission-split {
+    flex-direction: row;
+    min-height: 100vh;
+  }
+
+  .mission-image {
+    width: 50%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+
+  .mission-content {
+    width: 50%;
+    padding: 4rem 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(245, 235, 224, 0.98);
+  }
+
+  .mission-content h2 {
+    font-size: 2.75rem;
+  }
+
+  .mission-content p {
+    font-size: 1.2rem;
+  }
+
+  .mission-content p:last-of-type {
+    font-size: 1.4rem;
+  }
+
+  .mission-content img[alt="Omare Character"] {
+    width: 180px;
+    bottom: 40px;
+    right: 30px;
+  }
+}
+
+/* XXL Desktop - 1441px to 1536px */
+@media (min-width: 1441px) and (max-width: 1536px) {
+  .mission-split {
+    flex-direction: row;
+    min-height: 100vh;
+  }
+
+  .mission-image {
+    width: 50%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+
+  .mission-content {
+    width: 50%;
+    padding: 4rem 4rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mission-content h2 {
+    font-size: 3rem;
+  }
+
+  .mission-content p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+  }
+
+  .mission-content p:last-of-type {
+    font-size: 1.5rem;
+  }
+
+  .mission-content img[alt="Omare Character"] {
+    width: 200px;
+    bottom: 50px;
+    right: 40px;
+  }
+}
+
+/* Ultra Wide - 1537px+ */
+@media (min-width: 1537px) {
+  .mission-split {
+    flex-direction: row;
+    min-height: 100vh;
+  }
+
+  .mission-image {
+    width: 50%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+
+  .mission-content {
+    width: 50%;
+    padding: 5rem 5rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mission-content h2 {
+    font-size: 3.25rem;
+  }
+
+  .mission-content p {
+    font-size: 1.35rem;
+    line-height: 1.9;
+  }
+
+  .mission-content p:last-of-type {
+    font-size: 1.6rem;
+  }
+
+  .mission-content img[alt="Omare Character"] {
+    width: 220px;
+    bottom: 60px;
+    right: 50px;
+  }
+}
+
+/* ========================================
+   Section Divider - Responsive
+   ======================================== */
+.divider {
+  padding: 1rem 0;
+}
+
+@media (max-width: 480px) {
+  .divider .w-56 {
+    width: 80px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .divider .w-56 {
+    width: 100px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .divider .w-56 {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .divider .w-56 {
+    width: 180px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .divider .w-56 {
+    width: 224px;
+  }
+}
+
