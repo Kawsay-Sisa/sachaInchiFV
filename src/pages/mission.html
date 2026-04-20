@@ -26,10 +26,15 @@
           class="flex xl:w-full justify-between gap-4 sm:gap-1 items-center h-16 sm:flex-row"
         >
           <div class="flex-shrink-0">
-            <a href="/">
-              <h1 class="lg:text-5xl text-3xl font-bold logo px-1">
+            <a href="/" class="flex">
+              <h1 class="lg:text-5xl text-3xl font-bold logo">
                 Omaré <sup class="text-lg align-super">™</sup>
               </h1>
+              <img
+                src="/public/assets/img/guayacanTree.webp"
+                width="48"
+                alt=""
+              />
             </a>
           </div>
           <div
@@ -145,11 +150,12 @@
           />
         </div>
       </div>
-      <section
+      
+      <!-- <section
         id="companyValues"
         class="relative w-full min-h-screen flex flex-col items-center justify-center bg-sandy-gradient py-6 pb-0 lg:py-0 lg:pt-10"
       >
-        <!-- Section Header -->
+
         <div class="text-center w-full z-10 px-4 mb-8 lg:mb-12">
           <h2
             class="text-3xl lg:text-4xl xl:text-5xl font-bold text-navyBlue w-[70%] mx-auto"
@@ -183,9 +189,9 @@
           </p>
         </div>
 
-        <!-- Values Container with Tree -->
+
         <div class="relative w-full mx-auto px-4 sm:px-6 md:px-8 my-24">
-          <!-- Tree with Values Inside -->
+
           <div
             class="tree-container relative mx-auto flex justify-center items-center"
             data-aos="zoom-in"
@@ -196,8 +202,6 @@
               alt="Guayacan Tree - Symbol of Our Values"
               class="w-80 sm:w-[22rem] lg:w-[30rem] xl:w-[62rem] 2xl:w-[42rem] h-auto drop-shadow-xl -mt-14"
             />
-
-            <!-- Value 1: Sustainability - Top Left (near canopy) -->
             <div
               class="value-item absolute hidden lg:flex flex-col items-center text-center top-[-20%] left-[20%] w-32 lg:w-36 xl:w-40"
               data-aos="fade-right"
@@ -230,7 +234,6 @@
               </p>
             </div>
 
-            <!-- Value 2: Quality - Top Right (near canopy) -->
             <div
               class="value-item absolute hidden lg:flex flex-col items-center text-center top-[-20%] right-[20%] w-32 lg:w-36 xl:w-40"
               data-aos="fade-left"
@@ -262,8 +265,6 @@
                 Premium organic products
               </p>
             </div>
-
-            <!-- Value 3: Community - Middle Left (near branches) -->
             <div
               class="value-item absolute hidden lg:flex flex-col items-center text-center top-[31%] left-[14%] w-32 lg:w-36 xl:w-40"
               data-aos="fade-right"
@@ -295,8 +296,6 @@
                 Supporting local farmers
               </p>
             </div>
-
-            <!-- Value 4: Authenticity - Middle Right (near branches) -->
             <div
               class="value-item absolute hidden lg:flex flex-col items-center text-center top-[32%] right-[14%] w-32 lg:w-36 xl:w-40"
               data-aos="fade-left"
@@ -329,7 +328,6 @@
               </p>
             </div>
 
-            <!-- Value 5: Wellness - Bottom Left (near trunk) -->
             <div
               class="value-item absolute hidden lg:flex flex-col items-center text-center bottom-[-10%] left-[22%] w-32 lg:w-36 xl:w-40"
               data-aos="fade-up"
@@ -362,7 +360,6 @@
               </p>
             </div>
 
-            <!-- Value 6: Nature - Bottom Right (near trunk) -->
             <div
               class="value-item absolute hidden lg:flex flex-col items-center text-center bottom-[-10%] right-[22%] w-32 lg:w-36 xl:w-40"
               data-aos="fade-up"
@@ -395,12 +392,9 @@
               </p>
             </div>
           </div>
-
-          <!-- Mobile Values Grid -->
           <div
             class="lg:hidden grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 mt-8 px-2"
           >
-            <!-- Mobile Value 1 -->
             <div
               class="value-card flex flex-col items-center text-center p-4 bg-cream/80 rounded-xl shadow-md"
               data-aos="fade-up"
@@ -426,8 +420,6 @@
                 Sustainability
               </h3>
             </div>
-
-            <!-- Mobile Value 2 -->
             <div
               class="value-card flex flex-col items-center text-center p-4 bg-cream/80 rounded-xl shadow-md"
               data-aos="fade-up"
@@ -453,8 +445,6 @@
                 Quality
               </h3>
             </div>
-
-            <!-- Mobile Value 3 -->
             <div
               class="value-card flex flex-col items-center text-center p-4 bg-cream/80 rounded-xl shadow-md"
               data-aos="fade-up"
@@ -480,8 +470,6 @@
                 Community
               </h3>
             </div>
-
-            <!-- Mobile Value 4 -->
             <div
               class="value-card flex flex-col items-center text-center p-4 bg-cream/80 rounded-xl shadow-md"
               data-aos="fade-up"
@@ -507,8 +495,6 @@
                 Authenticity
               </h3>
             </div>
-
-            <!-- Mobile Value 5 -->
             <div
               class="value-card flex flex-col items-center text-center p-4 bg-cream/80 rounded-xl shadow-md"
               data-aos="fade-up"
@@ -534,8 +520,6 @@
                 Wellness
               </h3>
             </div>
-
-            <!-- Mobile Value 6 -->
             <div
               class="value-card flex flex-col items-center text-center p-4 bg-cream/80 rounded-xl shadow-md"
               data-aos="fade-up"
@@ -578,8 +562,7 @@
             ></div>
           </div>
         </div>
-      </section>
-
+      </section> -->
       <!-- Mission Statement - Split Layout -->
       <div
         id="missionStatement"
@@ -669,7 +652,13 @@
           >
             Together, we can grow a brighter future—one little seed at a time.
           </p>
-          <img src="/assets/img/InchiChar.webp" alt="Omare Character" class="w-[250px] h-auto md:mt-8 lg:w-52 absolute right-0 md:right-14 bottom-10 md:bottom-20" data-aos="zoom-in" data-aos-delay="1000">
+          <img
+            src="/assets/img/InchiChar.webp"
+            alt="Omare Character"
+            class="w-[250px] h-auto md:mt-8 lg:w-52 absolute right-0 md:right-14 bottom-10 md:bottom-20"
+            data-aos="zoom-in"
+            data-aos-delay="1000"
+          />
         </div>
       </div>
     </section>

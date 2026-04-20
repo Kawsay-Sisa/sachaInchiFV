@@ -54,7 +54,7 @@ h5 {
   width: 100vw;
 }
 .navMission .logoMission {
-  width: max-content;
+  /* width: max-content; */
   font-family: "Noto Serif", sans-serif;
   font-style: italic;
   letter-spacing: 1px;
@@ -76,7 +76,7 @@ h1.logo {
   font-weight: 600;
 }
 .fixed-nav h1.logo {
-  max-width: 500px;
+  max-width: 520px;
 }
 
 .heroSection_languageSwitch {

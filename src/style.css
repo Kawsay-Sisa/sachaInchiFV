@@ -247,9 +247,9 @@ h1.logo {
   /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
 }
 
-.circular-image.biosphere {
+/* .circular-image.biosphere {
   margin-right: 0;
-}
+} */
 .flowing-text,
 .flowing-text-biosphere {
   text-align: justify;
@@ -382,6 +382,7 @@ body.es .hero-content {
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 .hero-text-content h3 {
@@ -1088,6 +1089,7 @@ body.es .title-group {
     text-align: center;
     margin: 0 auto;
     padding-right: 1rem;
+    margin-bottom: 2rem;
   }
 
   .hero-text-content h3 {
@@ -1211,6 +1213,7 @@ body.es .title-group {
     margin: 0 auto;
     padding-right: 1rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   body.es .hero-text-content {
     gap: 1.5rem;
@@ -1291,8 +1294,8 @@ body.es .title-group {
   }
 
   .circular-image {
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
     border-radius: 50%;
     object-fit: cover;
     shape-outside: circle(50%);
