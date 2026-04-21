@@ -208,6 +208,7 @@ footer {
 
 /** Mission Statement **/
 body.body_mission {
+  background: rgba(245, 235, 224, 0.98);
   padding-top: 65px;
   scrollbar-color: none;
 }
@@ -953,7 +954,12 @@ body.body_mission {
 /* ========================================
    Mission Section - Responsive Breakpoints
    ======================================== */
-
+.mission-content {
+    padding: 1.5rem 1rem;
+    min-height: auto;
+    background: rgba(245, 235, 224, 0.98);
+  }
+  
 /* Mobile - max 480px */
 @media (max-width: 480px) {
   .mission-split {
@@ -965,11 +971,7 @@ body.body_mission {
     order: -1;
   }
 
-  .mission-content {
-    padding: 1.5rem 1rem;
-    min-height: auto;
-    background: rgba(245, 235, 224, 0.98);
-  }
+  
 
   .mission-content h2 {
     font-size: 1.75rem;
