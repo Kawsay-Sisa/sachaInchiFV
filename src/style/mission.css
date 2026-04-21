@@ -135,7 +135,9 @@ h1.logo {
   right: 0.5rem;
   transform: translateY(-40%);
   opacity: 0;
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out;
 }
 
 /* LANGUAGE SWITCH */
@@ -258,28 +260,28 @@ body.body_mission {
   height: 100%;
 }
 .missionStatement {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    /* justify-content: center; */
-    background: url("/assets/img/Sacha-Inchi-plantas.webp") center;
-    background-size: cover;
-    overflow: hidden;
-  }
-  .missionStatement::before {
-    content: "";
-    height: 100px;
-    width: 100px;
-    background-image: url("/assets/img/InchiChar.webp");
-    position: absolute;
-    /* opacity: 0.15; */
-    top: 0;
-    left: 70%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 3;
-  }
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* justify-content: center; */
+  background: url("/assets/img/Sacha-Inchi-plantas.webp") center;
+  background-size: cover;
+  overflow: hidden;
+}
+.missionStatement::before {
+  content: "";
+  height: 100px;
+  width: 100px;
+  background-image: url("/assets/img/InchiChar.webp");
+  position: absolute;
+  /* opacity: 0.15; */
+  top: 0;
+  left: 70%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
 
 .glass-card {
   background: rgba(0, 0, 0, 0.09);
@@ -288,7 +290,6 @@ body.body_mission {
   position: relative;
   overflow: hidden;
 }
-
 
 /* Text shadow for better readability */
 .text-shadow {
@@ -402,7 +403,6 @@ body.body_mission {
     max-height: 220px;
     padding: 60px 0;
   }
-
 
   .headerMission::before {
     width: 90%;
@@ -556,8 +556,7 @@ body.body_mission {
     position: absolute;
     left: -5%;
     bottom: -11.8%;
-    background: url("/assets/img/cornerBGHeader.webp") right center
-      no-repeat;
+    background: url("/assets/img/cornerBGHeader.webp") right center no-repeat;
     background-size: cover;
     z-index: 3;
   }
@@ -571,14 +570,14 @@ body.body_mission {
     width: 34%;
     height: 100%;
   }
-  .missionStatement {
+  /* .missionStatement {
     position: relative;
     width: 100%;
     justify-content: center;
     background: url("/assets/img/Sacha-Inchi-plantas.webp") right center
       no-repeat;
     background-size: cover;
-  }
+  } */
   .missionStatement::before {
     content: "";
     height: 130px;
@@ -669,8 +668,7 @@ body.body_mission {
     position: absolute;
     left: -1%;
     bottom: -6.3%;
-    background: url("/assets/img/cornerBGHeader.webp") right center
-      no-repeat;
+    background: url("/assets/img/cornerBGHeader.webp") right center no-repeat;
     background-size: cover;
     z-index: 3;
   }
@@ -688,8 +686,8 @@ body.body_mission {
     position: relative;
     width: 100%;
     justify-content: center;
-    background: url("/assets/img/Sacha-Inchi-plantas.webp") right
-      center no-repeat;
+    background: url("/assets/img/Sacha-Inchi-plantas.webp") right center
+      no-repeat;
     background-size: cover;
   }
   .missionStatement::before {
@@ -762,8 +760,7 @@ body.body_mission {
     position: absolute;
     left: -1%;
     bottom: -4%;
-    background: url("/assets/img/cornerBGHeader.webp") right center
-      no-repeat;
+    background: url("/assets/img/cornerBGHeader.webp") right center no-repeat;
     background-size: cover;
     z-index: 3;
   }
@@ -816,7 +813,7 @@ body.body_mission {
 }
 
 /* Company Values Section */
-#companyValues {
+/* #companyValues {
   scroll-margin-top: 64px;
 }
 
@@ -842,17 +839,21 @@ body.body_mission {
 }
 
 .value-icon {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .value-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .value-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
+} */
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   .value-item {
@@ -868,14 +869,27 @@ body.body_mission {
 
 /* Sequential Value Animations */
 @keyframes subtleFloat {
-  0%, 100% { transform: translateY(0) scale(1.1); }
-  50% { transform: translateY(-5px) scale(1.1); }
+  0%,
+  100% {
+    transform: translateY(0) scale(1.1);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.1);
+  }
 }
 
 @keyframes iconPulse {
-  0% { transform: scale(0.8); opacity: 0; }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); opacity: 1; }
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .value-item .value-icon {
@@ -904,6 +918,13 @@ body.body_mission {
 /* ========================================
    Mission Statement - Split Layout
    ======================================== */
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .mission-split {
   position: relative;
 }
@@ -1045,13 +1066,9 @@ body.body_mission {
 
 /* Laptop - 961px to 1024px */
 @media (min-width: 961px) and (max-width: 1024px) {
-  .mission-split {
-    flex-direction: row;
-    min-height: 100vh;
-  }
 
   .mission-image {
-    width: 45%;
+    width: 100%;
     height: 100vh;
     position: sticky;
     top: 0;
@@ -1059,9 +1076,8 @@ body.body_mission {
   }
 
   .mission-content {
-    width: 55%;
-    padding: 3rem 2rem;
-    min-height: 100vh;
+    width: 100%;
+    padding: 3rem 2rem 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1076,10 +1092,6 @@ body.body_mission {
     font-size: 1.1rem;
   }
 
-  .mission-content p:last-of-type {
-    font-size: 1.3rem;
-  }
-
   .mission-content img[alt="Omare Character"] {
     width: 140px;
     bottom: 20px;
@@ -1089,22 +1101,9 @@ body.body_mission {
 
 /* Desktop - 1025px to 1280px */
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .mission-split {
-    flex-direction: row;
-    min-height: 100vh;
-  }
-
-  .mission-image {
-    width: 50%;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-  }
 
   .mission-content {
-    width: 50%;
     padding: 3rem 2.5rem;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1132,22 +1131,9 @@ body.body_mission {
 
 /* XL Desktop - 1281px to 1440px */
 @media (min-width: 1281px) and (max-width: 1440px) {
-  .mission-split {
-    flex-direction: row;
-    min-height: 100vh;
-  }
-
-  .mission-image {
-    width: 50%;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-  }
 
   .mission-content {
-    width: 50%;
     padding: 4rem 3rem;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1175,22 +1161,14 @@ body.body_mission {
 
 /* XXL Desktop - 1441px to 1536px */
 @media (min-width: 1441px) and (max-width: 1536px) {
-  .mission-split {
-    flex-direction: row;
-    min-height: 100vh;
-  }
 
   .mission-image {
-    width: 50%;
-    height: 100vh;
     position: sticky;
     top: 0;
   }
 
   .mission-content {
-    width: 50%;
     padding: 4rem 4rem;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1218,22 +1196,9 @@ body.body_mission {
 
 /* Ultra Wide - 1537px+ */
 @media (min-width: 1537px) {
-  .mission-split {
-    flex-direction: row;
-    min-height: 100vh;
-  }
-
-  .mission-image {
-    width: 50%;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-  }
 
   .mission-content {
-    width: 50%;
     padding: 5rem 5rem;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1384,7 +1349,6 @@ body.body_mission {
 
   .vision-media {
     height: 320px;
-    order: -1;
   }
 
   .vision-content {
@@ -1404,26 +1368,21 @@ body.body_mission {
 /* Laptop - 961px to 1024px */
 @media (min-width: 961px) and (max-width: 1024px) {
   .vision-split {
-    flex-direction: row;
-    min-height: 100vh;
+    /* flex-direction: row; */
   }
 
   .vision-content {
-    width: 55%;
+    width: 100%;
     padding: 3rem 2rem;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    order: 0;
   }
 
   .vision-media {
-    width: 45%;
-    height: 100vh;
-    position: sticky;
+    width: 100%;
+    max-height: 300px;
+    /* position: sticky; */
     top: 0;
-    order: 1;
   }
 
   .vision-content h2 {
@@ -1438,26 +1397,23 @@ body.body_mission {
 /* Desktop - 1025px to 1280px */
 @media (min-width: 1025px) and (max-width: 1280px) {
   .vision-split {
-    flex-direction: row;
+    /* flex-direction: row; */
     min-height: 100vh;
   }
 
   .vision-content {
-    width: 50%;
+    width: 100%;
     padding: 3rem 2.5rem;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    order: 0;
   }
 
   .vision-media {
-    width: 50%;
-    height: 100vh;
-    position: sticky;
+    width: 100%;
+    max-height: 300px;
+    /* position: sticky; */
     top: 0;
-    order: 1;
   }
 
   .vision-content h2 {
@@ -1483,7 +1439,6 @@ body.body_mission {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    order: 0;
   }
 
   .vision-media {
@@ -1491,7 +1446,6 @@ body.body_mission {
     height: 100vh;
     position: sticky;
     top: 0;
-    order: 1;
   }
 
   .vision-content h2 {
@@ -1517,7 +1471,6 @@ body.body_mission {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    order: 0;
   }
 
   .vision-media {
@@ -1525,7 +1478,6 @@ body.body_mission {
     height: 100vh;
     position: sticky;
     top: 0;
-    order: 1;
   }
 
   .vision-content h2 {
@@ -1552,7 +1504,6 @@ body.body_mission {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    order: 0;
   }
 
   .vision-media {
@@ -1560,7 +1511,6 @@ body.body_mission {
     height: 100vh;
     position: sticky;
     top: 0;
-    order: 1;
   }
 
   .vision-content h2 {
@@ -1572,4 +1522,3 @@ body.body_mission {
     line-height: 1.9;
   }
 }
-
