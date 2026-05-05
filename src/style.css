@@ -1207,7 +1207,7 @@ body.es .title-group {
   .hero-text-content {
     align-items: center;
     gap: 1.8rem;
-    width: 60%;
+    /* width: 60%; */
     max-width: 650px;
     text-align: center;
     margin: 0 auto;
