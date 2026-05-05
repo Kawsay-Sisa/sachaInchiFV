@@ -315,8 +315,8 @@ footer {
 .hero {
   position: relative;
   min-height: 100dvh;
-  max-height: 100dvh;
-  height: 100dvh;
+  /* max-height: 100dvh;
+  height: 100dvh; */
   width: 100%;
   display: flex;
   align-items: center;
@@ -807,9 +807,9 @@ body.es .title-group {
   .hero {
     padding: 5rem 1rem 2rem 1.5rem;
     justify-content: center;
-    height: 100dvh;
+    /* height: 100dvh;
     min-height: 100dvh;
-    max-height: 100dvh;
+    max-height: 100dvh; */
   }
 
   .hero-content {
@@ -931,9 +931,9 @@ body.es .title-group {
 @media (min-width: 1440px) and (max-width: 1535px) {
   .hero {
     padding: 5rem 1.8rem 2rem 1.5rem;
-    height: 100dvh;
+    /* height: 100dvh;
     min-height: 100dvh;
-    max-height: 100dvh;
+    max-height: 100dvh; */
   }
 
   .hero-content {
