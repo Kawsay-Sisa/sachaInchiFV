@@ -103,12 +103,12 @@ const translations = {
     navBar: {
       home: "Home",
       moreInfo: "Learn More",
-      aboutUs: "Mission",
+      aboutUs: "Our Values",
     },
     mobileMenu: {
       home: "Home",
       moreInfo: "Learn More",
-      aboutUs: "Mission",
+      aboutUs: "Our Values",
     },
     header: {
       title: "Learn More About Sacha Inchi",
@@ -194,7 +194,7 @@ const translations = {
         "Discover the natural benefits of Sacha Inchi, the Amazonian treasure for your health and wellness.",
       home: "Home",
       moreInfo: "Learn More",
-      aboutUs: "Mission",
+      aboutUs: "Our Values",
       followUs: "Follow Us",
     },
   },
@@ -202,7 +202,7 @@ const translations = {
   es: {
     navBar: {
       home: "Inicio",
-      aboutUs: "Misión",
+      aboutUs: "Nuestros Valores",
       moreInfo: "Aprende Más",
     },
     mobileMenu: {
@@ -294,7 +294,7 @@ const translations = {
         "Descubre los beneficios naturales del Sacha Inchi, el tesoro amazónico para tu salud y bienestar.",
       home: "Inicio",
       moreInfo: "Aprende Más",
-      aboutUs: "Misión",
+      aboutUs: "Nuestros Valores",
       followUs: "Siguenos",
     },
   },

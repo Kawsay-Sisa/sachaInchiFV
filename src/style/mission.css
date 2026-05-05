@@ -451,20 +451,20 @@ body.body_mission {
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   .headerMission {
-    min-height: 200px;
-    max-height: 250px;
+    min-height: 150px;
+    max-height: 150px;
     padding: 60px 0;
   }
 
   .headerMission::before {
     width: 86%;
-    background: url("/assets/img/headerBGV2.webp") right center no-repeat;
+    background: url("/assets/img/headerBGV2.webp") left center no-repeat;
     background-size: cover;
   }
   .headerMission::after {
     width: 150px;
     height: 150px;
-    bottom: -8.8%;
+    bottom: -11.5%;
   }
   .header-text {
     width: 65%;

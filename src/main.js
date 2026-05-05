@@ -108,13 +108,13 @@ const translations = {
     },
     section2: {
       home: "Home",
-      aboutUs: "Mission",
+      aboutUs: "Our Values",
       moreInfo: "Learn More",
     },
     mobileMenu: {
       home: "Home",
       moreInfo: "More Info",
-      aboutUs: "Mission",
+      aboutUs: "Our Values",
     },
     section3: {
       title1: "What is",
@@ -258,7 +258,7 @@ const translations = {
         "Discover the natural benefits of Sacha Inchi, the Amazonian treasure for your health and wellness.",
       home: "Home",
       moreInfo: "Learn More",
-      aboutUs: "Mission",
+      aboutUs: "Our Values",
       followUs: "Follow Us",
     },
   },
@@ -273,13 +273,13 @@ const translations = {
     },
     section2: {
       home: "Inicio",
-      aboutUs: "Misión",
+      aboutUs: "Nuestros valores",
       moreInfo: "Aprende más",
     },
     mobileMenu: {
       home: "Inicio",
       moreInfo: "Aprende más",
-      aboutUs: "Misión",
+      aboutUs: "Nuestros Valores",
     },
     section3: {
       title: "¿Qué es Sacha Inchi?",
@@ -429,7 +429,7 @@ const translations = {
         "Descubre los beneficios naturales del Sacha Inchi, el tesoro amazónico para tu salud y bienestar.",
       home: "Inicio",
       moreInfo: "Aprende Más",
-      aboutUs: "Misión",
+      aboutUs: "Nuestros Valores",
       followUs: "Siguenos",
     },
   },

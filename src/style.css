@@ -1187,6 +1187,18 @@ body.es .title-group {
   .imageSection4 {
     min-height: 300px;
   }
+
+  .circular-image {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    object-fit: cover;
+    shape-outside: circle(50%);
+    float: left;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+  }
   #section5 .imgContainer {
     width: 280px;
     height: 400px;
@@ -1300,7 +1312,7 @@ body.es .title-group {
     object-fit: cover;
     shape-outside: circle(50%);
     float: left;
-    margin-right: 1rem;
+    margin-right: 2rem;
     margin-bottom: 1rem;
     /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
   }
