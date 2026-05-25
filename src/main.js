@@ -134,7 +134,10 @@ const translations = {
     section4: {
       title: "Sacha Inchi",
       subtitle: "The SuperFood",
-      cta: "Tap on a circle to explore more details!",
+      cta: "Tap a nutrient to explore its benefits.",
+      descHeadline: "Nourishment Rooted in Nature",
+      descText: "Naturally rich in plant-based protein and Omega 3, 6, and 9, Sacha Inchi supports heart health, mental clarity, sustained energy, and everyday vitality—through clean nourishment your body naturally understands.",
+      descOutro: "Through simple, natural nourishment, we help you feel energized, balanced, and connected—to what you eat and where it comes from. Because what nourishes you should also give back.",
       benefit1Title: "Omega 3, 6, 9 Fatty Acid",
       benefit2Title: "Protein",
       benefit3Title: "Fiber",
@@ -302,7 +305,10 @@ const translations = {
     section4: {
       title: "Sacha Inchi",
       subtitle: "El Super Alimento",
-      cta: "Toca cualquier círculo para descubrir más",
+      cta: "Toca un nutriente para explorar sus beneficios.",
+      descHeadline: "Nutrición arraigada en la naturaleza",
+      descText: "Naturalmente rico en proteína vegetal y Omega 3, 6 y 9, Sacha Inchi apoya la salud del corazón, la claridad mental, la energía sostenida y la vitalidad diaria—a través de una nutrición limpia que tu cuerpo entiende de forma natural.",
+      descOutro: "A través de una nutrición simple y natural, te ayudamos a sentirte con energía, equilibrio y conexión—con lo que comes y de dónde proviene. Porque lo que te nutre también debe dar algo a cambio.",
       benefit1Title: "Omega 3, 6, 9",
       benefit2Title: "Proteina",
       benefit3Title: "Fibra",
