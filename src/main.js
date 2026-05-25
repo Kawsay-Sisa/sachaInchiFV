@@ -101,10 +101,11 @@ benefitCloseBtns.forEach((btn) => {
 const translations = {
   en: {
     section1: {
-      subtitle: "Amazon’s Superfood for a Healthier You!",
-      description: `Discover the natural goodness of sustainable nutrition rich in`,
-      description2: "Omega 3, 6 and 9.",
-      cta: "Step Into the Secrets of Ancestral Nutrition",
+      subtitle: "Born in the Amazon. Made for modern life.",
+      title: "Clean energy for your body.",
+      title2: "Real impact for the planet.",
+      description: "Amazonian Sacha Inchi snacks crafted for energy, clarity, and vitality.",
+      cta: "Experience OMARÉ",
     },
     section2: {
       home: "Home",
@@ -265,11 +266,11 @@ const translations = {
 
   es: {
     section1: {
-      subtitle: "El Superalimento del Amazonas para una Vida Más Saludable.",
-      description:
-        "Descubre las propiedades naturales de una nutrición sostenible y rica en",
-      description2: "Omega 3, 6 y 9.",
-      cta: "Descubre el Secreto del Amazonas",
+      subtitle: "Nacido en el Amazonas. Hecho para la vida moderna.",
+      title: "Energía limpia para tu cuerpo.",
+      title2: "Impacto real para el planeta.",
+      description: "Snacks de Sacha Inchi amazónico, elaborados para tu energía, claridad y vitalidad.",
+      cta: "Descubre OMARÉ",
     },
     section2: {
       home: "Inicio",
