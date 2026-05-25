@@ -189,6 +189,14 @@ const translations = {
       value6TitleMobile: "Nature",
     },
 
+    belonging: {
+      belongingTitle: "More Than a Snack",
+      belongingP1: "OMARÉ is for those who choose better—for their bodies, for the planet, and for the future.",
+      belongingP2: "A simple daily ritual that connects you to something greater.",
+      belongingCTA: "Join us in growing a better way—one seed at a time.",
+      belongingBtn: "Be Part of OMARÉ",
+    },
+
     footer: {
       description:
         "Discover the natural benefits of Sacha Inchi, the Amazonian treasure for your health and wellness.",
@@ -287,6 +295,14 @@ const translations = {
       value6Title: "Naturaleza",
       value6Desc: "Trabajando en armonía con el medio ambiente",
       value6TitleMobile: "Naturaleza",
+    },
+
+    belonging: {
+      belongingTitle: "Más que un snack",
+      belongingP1: "OMARÉ es para quienes eligen mejor—para su cuerpo, para el planeta y para el futuro.",
+      belongingP2: "Un ritual diario simple que te conecta con algo más grande.",
+      belongingCTA: "Únete a nosotros en el camino hacia algo mejor—una semilla a la vez.",
+      belongingBtn: "Sé parte de OMARÉ",
     },
 
     footer: {

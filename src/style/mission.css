@@ -1404,7 +1404,7 @@ body.body_mission {
 
   .vision-content {
     width: 100%;
-    padding: 3rem 2.5rem;
+    padding: 3rem 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1498,4 +1498,27 @@ body.body_mission {
     font-size: 1.35rem;
     line-height: 1.9;
   }
+}
+
+/* Belonging Section Button */
+.belonging-btn {
+  display: inline-block;
+  background-color: #b8935f;
+  color: white;
+  border: 2px solid #d4a574;
+  padding: 12px 32px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 10px 30px rgba(212, 165, 116, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.belonging-btn:hover {
+  background-color: #d4a574;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(212, 165, 116, 0.55);
 }
