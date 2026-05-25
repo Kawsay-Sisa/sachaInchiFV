@@ -1247,6 +1247,7 @@ body.es .title-group {
     text-wrap: balance;
     text-align: center;
     line-height: 1.3;
+    margin-left: 0;
   }
   body.es .hero-text-content h3 {
     font-size: 1.3rem;
@@ -1296,8 +1297,8 @@ body.es .title-group {
   /* Sect 3 */
 
   .header {
-    min-height: 220px;
-    max-height: 220px;
+    min-height: 190px;
+    max-height: 190px;
     padding: 60px 0;
   }
   .header::before {
@@ -1307,7 +1308,7 @@ body.es .title-group {
     width: 230px;
     height: 230px;
     left: -5%;
-    bottom: -12.5%;
+    bottom: -14.2%;
   }
   .header-text {
     width: 65%;
