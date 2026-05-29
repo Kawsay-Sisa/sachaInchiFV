@@ -960,6 +960,11 @@ body.es .title-group {
     font-size: 1.7rem;
   }
 
+  .charImage {
+    width: 110px;
+    height: 110px;
+    margin-bottom: -3rem;
+  }
   .cta-button {
     margin-top: 16px;
     font-size: 22px;
@@ -1025,11 +1030,6 @@ body.es .title-group {
     font-size: 3.2rem;
     text-shadow: 5px 4px 4px rgba(28, 45, 21, 0.25);
   }
-
-  /* .seed-divider {
-    width: 210px;
-    height: 150px;
-  } */
 
   .description {
     font-size: 1.5rem;
