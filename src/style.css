@@ -829,7 +829,7 @@ body.es .title-group {
     align-items: center;
     justify-content: center;
     justify-items: center;
-    gap: 2.6rem;
+    gap: 2rem;
     width: 55%;
     max-width: 800px;
     text-align: center;
@@ -838,7 +838,7 @@ body.es .title-group {
   }
 
   .hero-text-content h3 {
-    font-size: 2.3rem;
+    font-size: 1.6rem;
     font-weight: 400;
     /* text-wrap: balance; */
     text-align: center;
@@ -846,27 +846,23 @@ body.es .title-group {
   }
 
   .title-group {
-    gap: 2rem;
+    gap: 2.3rem;
     margin-bottom: 20px;
     flex-direction: column;
   }
 
   .title-group h1 {
-    font-size: 5.5rem;
+    font-size: 3.5rem;
     text-shadow: 2px 4px 8px rgb(28 45 21);
   }
 
-  .seed-divider {
-    width: 175px;
-    height: 140px;
-  }
   .description-group {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .description {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.5;
     text-wrap: balance;
     margin-bottom: 0;
@@ -879,7 +875,7 @@ body.es .title-group {
   .cta-button {
     margin-top: 24px;
     padding: 10px 13px;
-    font-size: 30px;
+    font-size: 22px;
   }
 
   .charImage {
@@ -927,6 +923,49 @@ body.es .title-group {
   }
 }
 
+/*                          1920px DESKTOP                        */
+@media (min-width: 1800px) {
+  .hero-content {
+    height: auto;
+    max-width: 1451px;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    gap: 2rem;
+    padding: 0 2rem;
+    margin-top: 4.5rem;
+  }
+  body.es .hero-content {
+    margin-top: 4.5rem;
+  }
+  .hero-text-content {
+    gap: 4rem;
+  }
+
+  .hero-text-content h3 {
+    font-size: 1.85rem;
+  }
+
+  .title-group {
+    gap: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .title-group h1 {
+    font-size: 3.8rem;
+  }
+
+  .description {
+    font-size: 1.7rem;
+  }
+
+  .cta-button {
+    margin-top: 16px;
+    font-size: 22px;
+  }
+}
+
 /*                          XL DESKTOP                           */
 @media (min-width: 1440px) and (max-width: 1535px) {
   .hero {
@@ -940,7 +979,7 @@ body.es .title-group {
     max-width: 1400px;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 3rem;
+    gap: 4rem;
     overflow: hidden;
     padding: 0 2rem;
     margin-top: 1rem;
@@ -952,9 +991,9 @@ body.es .title-group {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3rem;
-    width: 60%;
-    max-width: 850px;
+    gap: 4rem;
+    width: 50%;
+    max-width: 800px;
     text-align: center;
     margin: 0 auto;
     /* padding-right: 1rem; */
@@ -964,7 +1003,7 @@ body.es .title-group {
     gap: 4rem;
   }
   .hero-text-content h3 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 400;
     text-wrap: balance;
     text-align: center;
@@ -973,7 +1012,7 @@ body.es .title-group {
   }
 
   body.es .hero-text-content h3 {
-    font-size: 1.65rem;
+    font-size: 1.5rem;
     text-wrap: balance;
   }
   .title-group {
@@ -983,7 +1022,7 @@ body.es .title-group {
   }
 
   .title-group h1 {
-    font-size: 4rem;
+    font-size: 3.2rem;
     text-shadow: 5px 4px 4px rgba(28, 45, 21, 0.25);
   }
 
@@ -993,7 +1032,7 @@ body.es .title-group {
   } */
 
   .description {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     margin-bottom: 0;
   }
@@ -1229,7 +1268,7 @@ body.es .title-group {
   }
   .hero-text-content {
     align-items: center;
-    gap: 2.3rem;
+    gap: 2.6rem;
     /* width: 60%; */
     max-width: 650px;
     text-align: center;
@@ -1239,7 +1278,7 @@ body.es .title-group {
     margin-bottom: 2rem;
   }
   body.es .hero-text-content {
-    gap: 1.5rem;
+    gap: 2rem;
   }
   .hero-text-content h3 {
     font-size: 1.4rem;
@@ -1263,13 +1302,8 @@ body.es .title-group {
     font-size: 2.8rem;
   }
 
-  .seed-divider {
-    width: 160px;
-    height: 120px;
-  }
-
   .description {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.4;
     margin-bottom: 0;
   }

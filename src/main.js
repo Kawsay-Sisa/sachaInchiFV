@@ -104,7 +104,7 @@ const translations = {
       subtitle: "Born in the Amazon. Made for modern life.",
       title: "Clean energy for your body.",
       title2: "Real impact for the planet.",
-      description: "Amazonian Sacha Inchi snacks crafted for energy, clarity, and vitality.",
+      description: "Sacha Inchi snacks crafted for energy, clarity, and vitality.",
       cta: "Experience OMARÉ",
     },
     section2: {
