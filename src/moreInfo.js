@@ -297,6 +297,26 @@ const translations = {
       value6TitleMobile: "Naturaleza",
     },
 
+    visionStatement: {
+      visionSubTitle: "Nuestra Visión",
+      visionP1: "Nuestra visión es despertar una forma de vivir más consciente—donde cada alimento que eliges se convierte en un puente entre tu bienestar y la salud del planeta.",
+      visionP2: "Imaginamos un mundo donde superalimentos como el Sacha Inchi sean valorados no solo por su poder nutritivo, sino por los ecosistemas, comunidades y tradiciones ancestrales que los hacen posibles.",
+      visionP3: "A través de OMARÉ, queremos acercar la nutrición vegetal más pura a tu vida diaria—cuidando tu corazón, tu vitalidad y tu bienestar a largo plazo—mientras apoyamos prácticas sostenibles que protegen la Amazonía y empoderan a quienes la cultivan.",
+      visionP4: "Al unir naturaleza, nutrición y propósito, construimos un futuro donde cada elección—lo que comemos, lo que apoyamos y cómo vivimos—tiene el poder de transformar.",
+      visionClosingTitle: "Un futuro donde lo que te nutre también nutre al mundo.",
+      visionClosingText: "",
+    },
+
+    missionStatement: {
+      missionSubTitle: "Nuestra Misión",
+      missionP1: "En el corazón de OMARÉ vive un compromiso profundo con tu bienestar—por dentro y por fuera.",
+      missionP2: "Te traemos el poder nutritivo del Sacha Inchi bioorgánico, una supersemilla amazónica naturalmente rica en Omega 3, 6 y 9, que fortalece tu corazón, activa tu mente, potencia tus defensas y alimenta tu vitalidad cada día.",
+      missionP3: "Pero nuestra misión va mucho más allá de lo que hay dentro de cada semilla.",
+      missionP4: "Trabajamos mano a mano con comunidades amazónicas para cultivar y obtener el Sacha Inchi de forma responsable—protegiendo ecosistemas, apoyando medios de vida locales y construyendo un futuro más sostenible desde la raíz.",
+      missionP5: "A través de una nutrición simple y natural, te ayudamos a sentirte con energía, en equilibrio y conectado—con lo que comes y con el lugar del que proviene.",
+      missionClosingTitle: "Porque lo que te nutre también debe dar algo a cambio.",
+    },
+
     belonging: {
       belongingTitle: "Más que un snack",
       belongingP1: "OMARÉ es para quienes eligen mejor—para su cuerpo, para el planeta y para el futuro.",
