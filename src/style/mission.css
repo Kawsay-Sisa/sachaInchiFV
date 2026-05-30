@@ -1524,3 +1524,13 @@ body.body_mission {
   transform: translateY(-2px);
   box-shadow: 0 14px 36px rgba(212, 165, 116, 0.55);
 }
+
+@media (min-width: 1800px) {
+  #belonging > div {
+    max-width: 68rem;
+  }
+
+  #belonging .left img {
+    object-fit: cover;
+  }
+}
