@@ -197,6 +197,26 @@ const translations = {
       belongingBtn: "Be Part of OMARÉ",
     },
 
+    visionStatement: {
+      visionSubTitle: "Our Vision",
+      visionP1: "Our vision is to inspire a more conscious way of living—where daily nourishment becomes a meaningful connection to both personal wellness and the health of our planet.",
+      visionP2: "We envision a world where Amazonian superfoods like Sacha Inchi are recognized not only for their powerful nutritional benefits, but for the ecosystems, communities, and traditions they represent.",
+      visionP3: "Through OMARÉ, we aim to make nutrient-rich, plant-based foods more accessible—supporting heart health, vitality, and long-term well-being—while advancing sustainable practices that protect the Amazon and empower the people who cultivate it.",
+      visionP4: "By bridging nature, nutrition, and purpose, we are building a future where every choice we make—what we eat, what we support, and how we live—creates a positive impact.",
+      visionClosingTitle: "A future where nourishment gives back—to you, to communities, and to the earth.",
+      visionClosingText: "",
+    },
+
+    missionStatement: {
+      missionSubTitle: "Our Mission",
+      missionP1: "At the heart of OMARÉ is a commitment to your wellness—inside and out.",
+      missionP2: "We bring you the nutrient-rich power of biorganic Sacha Inchi, an Amazonian superseed naturally abundant in Omega 3, 6, and 9, supporting heart health, brain function, immune strength, and overall vitality.",
+      missionP3: "But our mission goes beyond what's inside each seed.",
+      missionP4: "We work in partnership with Amazonian communities to cultivate and source Sacha Inchi responsibly-protecting ecosystems, supporting local livelihoods, and building a more sustainable future from the ground up.",
+      missionP5: "Through simple, natural nourishment, we help you feel energized, balanced, and connected—to what you eat and where it comes from.",
+      missionClosingTitle: "Because what nourishes you should also give back.",
+    },
+
     footer: {
       description:
         "Discover the natural benefits of Sacha Inchi, the Amazonian treasure for your health and wellness.",

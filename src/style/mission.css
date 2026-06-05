@@ -932,6 +932,48 @@ body.body_mission {
   position: relative;
 }
 
+/* Inline float image inside mission content */
+.mission-body-block {
+  display: block;
+}
+
+.mission-inline-image {
+  display: none;
+}
+
+@media (min-width: 961px) {
+  .mission-inline-image {
+    display: block;
+    float: right;
+    width: 42%;
+    max-height: 480px;
+    object-fit: cover;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+  }
+
+  .mission-body-block::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media (min-width: 1281px) {
+  .mission-inline-image {
+    width: 44%;
+    max-height: 520px;
+  }
+}
+
+@media (min-width: 1537px) {
+  .mission-inline-image {
+    width: 45%;
+    max-height: 580px;
+  }
+}
+
 .mission-image {
   position: relative;
   overflow: hidden;
