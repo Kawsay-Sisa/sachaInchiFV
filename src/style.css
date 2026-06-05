@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -200,6 +200,17 @@ h1.logo {
 .flowing-text-biosphere {
   text-align: justify;
   line-height: 1.7;
+}
+
+.biosphere-quote {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.35rem;
+  line-height: 1.65;
+  color: #163020;
+  margin-top: 2.5rem;
+  margin-bottom: 0;
 }
 
 /**Sacha Inchi Benefits*/
@@ -919,6 +930,11 @@ body.es .title-group {
     height: 500px;
     margin-right: 2rem;
   }
+
+  .biosphere-quote {
+    font-size: 1.75rem;
+  }
+
   .imageSection4 {
     min-height: 300px;
   }
@@ -986,6 +1002,10 @@ body.es .title-group {
   .imageAndListItems {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .biosphere-quote {
+    font-size: 1.95rem;
   }
 
 }
@@ -1124,6 +1144,10 @@ body.es .title-group {
     line-height: 1.7;
     hyphens: auto;
     font-size: 24px;
+  }
+
+  .biosphere-quote {
+    font-size: 1.65rem;
   }
 
   .imageSection4 {

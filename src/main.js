@@ -211,7 +211,7 @@ const translations = {
       product3Title: "THE PERFECT GUILT FREE SNACK",
       product3Badge: "OMEGA & PROTEIN",
       product3Description: "Crunchy Sacha Inchi seeds kissed with",
-      product3_strongDescription: "Velvety Cacao Chips",
+      product3_strongDescription: "Delicious 70% Cacao",
     },
     infoSection5: {
       parallaxTitle: "Sustainability and Impact",
@@ -389,7 +389,7 @@ const translations = {
       product3Title: "EL SNACK PERFECTO SIN CULPAS",
       product3Badge: "OMEGA & PROTEÍNA",
       product3Description: "Crujientes semillas de Sacha Inchi bañadas en",
-      product3_strongDescription: "Delicioso Cacao Aterciopelado",
+      product3_strongDescription: "Delicioso Cacao al 70%",
     },
     infoSection5: {
       parallaxTitle: "Sostenibilidad e Impacto",
