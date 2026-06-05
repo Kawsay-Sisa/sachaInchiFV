@@ -853,7 +853,7 @@ body.es .title-group {
 
   .title-group h1 {
     font-size: 3.5rem;
-    text-shadow: 2px 4px 8px rgb(28 45 21);
+    text-shadow: 1px 2px 4px rgb(28 45 21 / 45%);
   }
 
   .description-group {

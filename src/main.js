@@ -102,8 +102,8 @@ const translations = {
   en: {
     section1: {
       subtitle: "Born in the Amazon. Made for modern life.",
-      title: "Clean energy for your body.",
-      title2: "Real impact for the planet.",
+      title: "Omega-Rich. Plant-Powered.",
+      title2: "Feel your best, naturally.",
       description:
         "Sacha Inchi snacks crafted for energy, clarity, and vitality.",
       cta: "Experience OMARÉ",
@@ -275,8 +275,8 @@ const translations = {
   es: {
     section1: {
       subtitle: "Nacido en el Amazonas. Hecho para la vida moderna.",
-      title: "Energía limpia para tu cuerpo.",
-      title2: "Impacto real para el planeta.",
+      title: "Rico en Omegas. Inspirado en la naturaleza.",
+      title2: "El poder de una semilla para tu bienestar.",
       description:
         "Nutrición ancestral para una vida llena de energía y vitalidad.",
       cta: "Descubre OMARÉ",
