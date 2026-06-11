@@ -101,7 +101,7 @@ benefitCloseBtns.forEach((btn) => {
 const translations = {
   en: {
     section1: {
-      subtitle: "Born in the Amazon. Made for modern life.",
+      subtitle: "Take in the richness of the Amazon, for today's wellness.",
       title: "Omega-Rich. Plant-Powered.",
       title2: "Feel your best, naturally.",
       description:
@@ -274,7 +274,7 @@ const translations = {
 
   es: {
     section1: {
-      subtitle: "Nacido en el Amazonas. Hecho para la vida moderna.",
+      subtitle: "Absorbe la riqueza del Amazonas, para el bienestar de hoy.",
       title: "Rico en Omegas. Inspirado en la naturaleza.",
       title2: "El poder de una semilla para tu bienestar.",
       description:
