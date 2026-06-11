@@ -203,10 +203,10 @@ h1.logo {
 }
 
 .biosphere-quote {
-  font-family: "Cormorant Garamond", serif;
+  /* font-family: "Cormorant Garamond", serif; */
   font-weight: 600;
   font-style: italic;
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   line-height: 1.65;
   color: #163020;
   margin-top: 2.5rem;
@@ -800,7 +800,7 @@ body.es .title-group {
   line-height: 0;
   color: #f6ba02;
   opacity: 0.3;
-  font-family: "Cormorant Garamond", serif;
+  /* font-family: "Cormorant Garamond", serif; */
 }
 
 /* founder responsive */
@@ -932,7 +932,7 @@ body.es .title-group {
   }
 
   .biosphere-quote {
-    font-size: 1.75rem;
+    font-size: 1.7rem;
   }
 
   .imageSection4 {
@@ -1005,7 +1005,7 @@ body.es .title-group {
   }
 
   .biosphere-quote {
-    font-size: 1.95rem;
+    font-size: 1.90rem;
   }
 
 }
@@ -1029,7 +1029,7 @@ body.es .title-group {
     margin-top: 1rem;
   }
   body.es .hero-content {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
   }
   .hero-text-content {
     display: flex;
@@ -1147,7 +1147,8 @@ body.es .title-group {
   }
 
   .biosphere-quote {
-    font-size: 1.65rem;
+    margin-top: 5rem;
+    font-size: 1.5rem;
   }
 
   .imageSection4 {
