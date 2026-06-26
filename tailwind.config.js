@@ -9,6 +9,7 @@ export default {
         serif: ["Lora", "serif"],
       },
       colors: {
+        bodyText: "#333333", // Dark charcoal for body text
         primary: "#1b4d20", // Deep green
         accent: "#f6ba02", // Gold
         highlight: "#ffde59", // Bright yellow
