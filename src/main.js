@@ -101,11 +101,10 @@ benefitCloseBtns.forEach((btn) => {
 const translations = {
   en: {
     section1: {
-      subtitle: "Take in the richness of the Amazon, for today's wellness.",
-      title: "Omega-Rich. Plant-Powered.",
-      title2: "Feel your best, naturally.",
-      description:
-        "Sacha Inchi snacks crafted for energy, clarity, and vitality.",
+      subtitle: "Born in the Amazon. Built to Regenerate.",
+      title: "Nourishing People. Protecting the Amazon for future generations",
+      title2: "",
+      description: "Omega 3, 6 & 9 \u2022 Protein \u2022 Naturally Nourishing",
       cta: "Experience OMARÉ",
     },
     section2: {
@@ -272,11 +271,10 @@ const translations = {
 
   es: {
     section1: {
-      subtitle: "Absorbe la riqueza del Amazonas, para el bienestar de hoy.",
-      title: "Rico en Omegas. Inspirado en la naturaleza.",
-      title2: "El poder de una semilla para tu bienestar.",
-      description:
-        "Nutrición ancestral para una vida llena de energía y vitalidad.",
+      subtitle: "Nacida en la Amazonía. Creada para regenerar.",
+      title: "Nutriendo personas. Protegiendo la Amazonía para las generaciones futuras",
+      title2: "",
+      description: "Omega 3, 6 y 9 \u2022 Prote\u00edna \u2022 Nutrici\u00f3n Natural",
       cta: "Descubre OMARÉ",
     },
     section2: {
