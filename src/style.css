@@ -500,10 +500,8 @@ body.es .title-group {
 
 .cta-button {
   margin-top: 40px;
-  background-color: #b8935f;
-  /* background: linear-gradient(135deg, #d4a574 0%, #b8935f 100%); */
-  color: white;
-  border: solid #d4a574 2px;
+  background-color: #163020;
+  color: #efd180;
   padding: 5px;
   border-radius: 10px;
   font-size: 20px;
