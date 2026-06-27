@@ -101,7 +101,7 @@ benefitCloseBtns.forEach((btn) => {
 const translations = {
   en: {
     section1: {
-      subtitle: "Born in the Amazon. Built to Regenerate.",
+      subtitle: "Born in the Amazon. Grown with purpose.",
       title: "Nourishing People. Protecting the Amazon for future generations",
       title2: "",
       description: "Omega 3, 6 & 9 \u2022 Protein \u2022 Naturally Nourishing",
@@ -271,10 +271,12 @@ const translations = {
 
   es: {
     section1: {
-      subtitle: "Nacida en la Amazonía. Creada para regenerar.",
-      title: "Nutriendo personas. Protegiendo la Amazonía para las generaciones futuras",
+      subtitle: "Nacida en la Amazonía. Cultivada con Propósito.",
+      title:
+        "Nutriendo personas. Protegiendo la Amazonía para las generaciones futuras",
       title2: "",
-      description: "Omega 3, 6 y 9 \u2022 Prote\u00edna \u2022 Nutrici\u00f3n Natural",
+      description:
+        "Omega 3, 6 y 9 \u2022 Prote\u00edna \u2022 Nutrici\u00f3n Natural",
       cta: "Descubre OMARÉ",
     },
     section2: {
