@@ -112,7 +112,7 @@ const translations = {
     },
     header: {
       title: "Learn More About Sacha Inchi",
-      subTitle: `Discover the Amazonian seed that combines tradition, nutrition, and sustainability.`,
+      subTitle: `Discover the Amazonian seed that bring together tradition, nutrition, and sustainability.`,
     },
     infoSection1: {
       title: "A Gift from the Amazon",
@@ -190,7 +190,7 @@ const translations = {
     },
 
     belonging: {
-      belongingTitle: "More Than a Snack",
+      belongingTitle: "A Shared Journey",
       belongingP1: "OMARÉ is for those who choose better—for their bodies, for the planet, and future generations.",
       belongingP2: "A simple daily ritual that connects you to something greater.",
       belongingCTA: "Join us in growing a better way—one seed at a time.",
@@ -338,7 +338,7 @@ const translations = {
     },
 
     belonging: {
-      belongingTitle: "Más que un snack",
+      belongingTitle: "Creciendo Juntos",
       belongingP1: "OMARÉ es para quienes eligen mejor—para su cuerpo, para el planeta y para el futuro.",
       belongingP2: "Un ritual diario simple que te conecta con algo más grande.",
       belongingCTA: "Únete a nosotros en el camino hacia algo mejor—una semilla a la vez.",
