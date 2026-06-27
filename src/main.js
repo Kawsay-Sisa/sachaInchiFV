@@ -105,7 +105,7 @@ const translations = {
       title: "Nourishing People. Protecting the Amazon for future generations",
       title2: "",
       description: "Omega 3, 6 & 9 \u2022 Protein \u2022 Naturally Nourishing",
-      cta: "Experience OMARÉ",
+      cta: "Discover OMARÉ",
     },
     section2: {
       home: "Home",
