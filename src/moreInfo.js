@@ -292,7 +292,6 @@ const translations = {
       p2: "Para nosotros, la clave es volver a las formas simples y naturales de cuidarnos, sin exigir más de lo que la Madre Tierra puede darnos. Porque aquello que te fortalece, también debe permitir que el planeta prospere.",
       p3: "Juntos, podemos cultivar un futuro más brillante, una pequeña semilla a la vez.",
     },
-
     companyValues: {
       valuesTitle: "Nuestros Valores",
       valuesSubtitle: "Arraigados en la tradición, creciendo hacia un futuro sostenible",
@@ -316,7 +315,6 @@ const translations = {
       value6Desc: "Trabajando en armonía con el medio ambiente",
       value6TitleMobile: "Naturaleza",
     },
-
     visionStatement: {
       visionSubTitle: "Nuestra Visión",
       visionP1: "Nuestra visión es despertar una forma de vivir más consciente—donde cada alimento que eliges se convierte en un puente entre tu bienestar y la salud del planeta.",
@@ -326,7 +324,6 @@ const translations = {
       visionClosingTitle: "Un futuro donde lo que te nutre también nutre al mundo.",
       visionClosingText: "",
     },
-
     missionStatement: {
       missionSubTitle: "Nuestra Misión",
       missionP1: "En el corazón de OMARÉ vive un compromiso profundo con tu bienestar—por dentro y por fuera.",
@@ -336,7 +333,6 @@ const translations = {
       missionP5: "A través de una nutrición simple y natural, te ayudamos a sentirte con energía, en equilibrio y conectado—con lo que comes y con el lugar del que proviene.",
       missionClosingTitle: "Porque lo que te nutre también debe dar algo a cambio.",
     },
-
     belonging: {
       belongingTitle: "Creciendo Juntos",
       belongingP1: "OMARÉ es para quienes eligen mejor—para su cuerpo, para el planeta y para el futuro.",
@@ -344,7 +340,6 @@ const translations = {
       belongingCTA: "Únete a nosotros en el camino hacia algo mejor—una semilla a la vez.",
       belongingBtn: "Sé parte de OMARÉ",
     },
-
     footer: {
       description:
         "Descubre los beneficios naturales del Sacha Inchi, el tesoro amazónico para tu salud y bienestar.",
