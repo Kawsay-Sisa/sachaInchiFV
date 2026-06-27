@@ -155,7 +155,7 @@ const translations = {
     },
     //*Mission Section **/
     mission: {
-      title: "Nourish Your Body From The Inside Out While Honoring The earth.",
+      title: "Nourish your Body While Honoring Nature.",
       subTitle: "Our Mission",
       p1Sub1: "We're here to ",
       p1Sub2: "fuel your body and feed your soul",
@@ -283,7 +283,7 @@ const translations = {
         "El Sacha Inchi se destaca como una alternativa excepcionalmente rica en proteínas, comparable al maní pero con un perfil lipídico más saludable. Los frutos secos y las semillas son fuentes clave de proteína vegetal, mientras que los aceites y frutas como el aguacate y las aceitunas ofrecen otros beneficios nutricionales, aunque no se caracterizan por su alto contenido proteico. Esta distinción refuerza el valor del Sacha Inchi como un superalimento integral, que aporta tanto proteínas de alta calidad como grasas saludables esenciales para una dieta equilibrada.",
     },
     mission: {
-      title: "Nutre Tu Cuerpo Desde El Interior Mientras Honras A La Tierra",
+      title: "Nutre Tu Cuerpo Mientras Honras la Naturaleza",
       subTitle: "Nuestra Misión",
       p1Sub1: "Estamos aquí para ",
       p1Sub2: "nutrir tu cuerpo y alimentar tu alma",

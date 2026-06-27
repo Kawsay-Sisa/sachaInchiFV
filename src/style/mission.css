@@ -359,10 +359,15 @@ body.body_mission {
 }
 @media (min-width: 1441px) and (max-width: 1536px) {
   .headerMission {
-    min-height: 230px;
+    min-height: 175px;
+    max-height: 195px;
+    padding: 25px 0;
   }
   .header-text {
-    margin-left: 4rem;
+    margin-left: 7rem;
+  }
+  body.es .header-text {
+    padding-left: 6.5rem;
   }
   .headerMission::before {
     width: 84%;
@@ -372,7 +377,7 @@ body.body_mission {
   .headerMission::after {
     width: 210px;
     height: 210px;
-    bottom: -11.5%;
+    bottom: -14.2%;
     z-index: 9;
   }
   .missionStatement {
@@ -402,9 +407,9 @@ body.body_mission {
 /*                          XL DESKTOP                           */
 @media (min-width: 1281px) and (max-width: 1440px) {
   .headerMission {
-    min-height: 220px;
-    max-height: 220px;
-    padding: 60px 0;
+    min-height: 165px;
+    max-height: 180px;
+    padding: 22px 0;
   }
 
   .headerMission::before {
@@ -415,7 +420,7 @@ body.body_mission {
   .headerMission::after {
     width: 210px;
     height: 210px;
-    bottom: -11.5%;
+    bottom: -16%;
     z-index: 9;
   }
   .header-text {
@@ -453,9 +458,9 @@ body.body_mission {
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   .headerMission {
-    min-height: 150px;
+    min-height: 130px;
     max-height: 150px;
-    padding: 60px 0;
+    padding: 18px 0;
   }
 
   .headerMission::before {
@@ -466,7 +471,7 @@ body.body_mission {
   .headerMission::after {
     width: 150px;
     height: 150px;
-    bottom: -11.5%;
+    bottom: -14%;
   }
   .header-text {
     width: 65%;
@@ -501,9 +506,9 @@ body.body_mission {
 /*                          LAPTOP                           */
 @media (min-width: 961px) and (max-width: 1024px) {
   .headerMission {
-    min-height: 220px;
-    max-height: 220px;
-    padding: 60px 0;
+    min-height: 155px;
+    max-height: 170px;
+    padding: 18px 0;
   }
   .headerMission::before {
     width: 95%;
@@ -512,7 +517,7 @@ body.body_mission {
     width: 230px;
     height: 230px;
     left: -5%;
-    bottom: -12.5%;
+    bottom: -18%;
   }
   .header-text {
     width: 65%;
@@ -531,14 +536,14 @@ body.body_mission {
   /* MISSION */
   .headerMission {
     position: relative;
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 155px;
+    max-height: 170px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 60px 0;
+    padding: 18px 0;
   }
   .headerMission::before {
     content: "";
@@ -558,7 +563,7 @@ body.body_mission {
     height: 200px;
     position: absolute;
     left: -5%;
-    bottom: -11.8%;
+    bottom: -18%;
     background: url("/assets/img/cornerBGHeader.webp") right center no-repeat;
     background-size: cover;
     z-index: 3;
@@ -610,9 +615,9 @@ body.body_mission {
     font-size: 14px;
   }
   .headerMission {
-    min-height: 160px;
-    max-height: 160px;
-    padding: 60px 0;
+    min-height: 130px;
+    max-height: 150px;
+    padding: 14px 0;
   }
   .headerMission::before {
     width: 100%;
@@ -621,7 +626,7 @@ body.body_mission {
     width: 150px;
     height: 150px;
     left: -5%;
-    bottom: -11.3%;
+    bottom: -14%;
   }
   .header-image {
     width: 34%;
@@ -648,9 +653,9 @@ body.body_mission {
 
 @media (min-width: 481px) and (max-width: 768px) {
   .headerMission {
-    min-height: 200px;
-    max-height: 200px;
-    padding: 60px 0;
+    min-height: 145px;
+    max-height: 165px;
+    padding: 12px 0;
   }
   .headerMission::before {
     content: "";
@@ -670,7 +675,7 @@ body.body_mission {
     height: 110px;
     position: absolute;
     left: -1%;
-    bottom: -6.3%;
+    bottom: -9%;
     background: url("/assets/img/cornerBGHeader.webp") right center no-repeat;
     background-size: cover;
     z-index: 3;
@@ -735,14 +740,14 @@ body.body_mission {
 
   .headerMission {
     position: relative;
-    min-height: 150px;
-    max-height: 150px;
+    min-height: 110px;
+    max-height: 130px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 60px 0;
+    padding: 10px 0;
   }
   .headerMission::before {
     content: "";
@@ -762,7 +767,7 @@ body.body_mission {
     height: 50px;
     position: absolute;
     left: -1%;
-    bottom: -4%;
+    bottom: -5%;
     background: url("/assets/img/cornerBGHeader.webp") right center no-repeat;
     background-size: cover;
     z-index: 3;
