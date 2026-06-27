@@ -131,7 +131,7 @@ const translations = {
     },
     section4: {
       title: "Sacha Inchi",
-      subtitle: "The SuperFood",
+      subtitle: "Ancestral Nutrition",
       cta: "Tap a nutrient to explore its benefits.",
       descHeadline: "Nourishment Rooted in Nature",
       descText:
@@ -302,7 +302,7 @@ const translations = {
     },
     section4: {
       title: "Sacha Inchi",
-      subtitle: "El Super Alimento",
+      subtitle: "Nutricion Ancestral",
       cta: "Toca un nutriente para explorar sus beneficios.",
       descHeadline: "Nutrición arraigada en la naturaleza",
       descText:
