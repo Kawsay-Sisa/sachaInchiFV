@@ -191,7 +191,7 @@ const translations = {
 
     belonging: {
       belongingTitle: "More Than a Snack",
-      belongingP1: "OMARÉ is for those who choose better—for their bodies, for the planet, and for the future.",
+      belongingP1: "OMARÉ is for those who choose better—for their bodies, for the planet, and future generations.",
       belongingP2: "A simple daily ritual that connects you to something greater.",
       belongingCTA: "Join us in growing a better way—one seed at a time.",
       belongingBtn: "Be Part of OMARÉ",
