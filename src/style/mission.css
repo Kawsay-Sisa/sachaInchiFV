@@ -820,48 +820,6 @@ body.body_mission {
   }
 }
 
-/* Company Values Section */
-/* #companyValues {
-  scroll-margin-top: 64px;
-}
-
-.tree-container img {
-  transition: transform 0.8s ease-in-out;
-}
-
-.tree-container:hover img {
-  transform: scale(1.03);
-}
-
-.value-item {
-  transition: transform 0.3s ease;
-}
-
-.value-item:hover {
-  transform: translateY(-5px);
-}
-
-.value-item:hover .value-icon {
-  transform: scale(1.1);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.value-icon {
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.value-card {
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.value-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-} */
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   .value-item {
@@ -932,6 +890,11 @@ body.body_mission {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 .mission-split {
   position: relative;
