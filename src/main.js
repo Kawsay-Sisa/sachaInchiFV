@@ -3,21 +3,6 @@ const nav = document.querySelector(".nav");
 const hero = document.querySelector(".hero");
 const topOfNav = nav.offsetTop;
 
-console.log(nav.offsetHeight);
-// function fixNav() {
-//   const offsetTop = window.scrollY;
-
-//   if (offsetTop >= topOfNav - 5) {
-//     document.body.classList.add("fixed-nav");
-//     document.body.style.paddingTop = nav.offsetHeight + "px";
-//   } else {
-//     document.body.style.paddingTop = 0;
-//     document.body.classList.remove("fixed-nav");
-//   }
-// }
-
-// window.addEventListener("scroll", fixNav);
-
 //*Show and hidde MobileMenu Modal */
 
 const mobileMenu = document.getElementById("navBar_mobileMenu");
@@ -65,14 +50,6 @@ hamburguerBtn.addEventListener("click", openModalMenu);
 
 closeModalBtn.addEventListener("click", closeModalMenu);
 
-// const moreinfoHeroBtn = document.getElementById("moreInfoHero");
-// const targetSection = document.querySelector(".whatIsSachaInchi");
-
-// if (moreinfoHeroBtn) {
-//   moreinfoHeroBtn.addEventListener("click", () => {
-//     targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-//   });
-// }
 
 //* Close And Reopen Benefit Modals
 
@@ -104,7 +81,9 @@ const translations = {
       subtitle: "Born in the Amazon. Grown with purpose.",
       title: "Nourishing People. Protecting the Amazon for future generations",
       title2: "",
-      description: "Omega 3, 6 & 9 \u2022 Protein \u2022 Naturally Nourishing",
+      description: "Naturally Nourishing",
+      description2: "Omega 3, 6 & 9",
+      description3: "Protein",
       cta: "Discover OMARÉ",
     },
     section2: {
