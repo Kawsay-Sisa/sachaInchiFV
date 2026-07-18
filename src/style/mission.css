@@ -78,6 +78,9 @@ h1.logo {
 .fixed-nav h1.logo {
   max-width: 500px;
 }
+sup {
+  top: -0.3em;
+}
 
 .heroSection_languageSwitch {
   position: absolute !important;
