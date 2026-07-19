@@ -80,10 +80,10 @@ const translations = {
     section1: {
       subtitle: "Born in the Amazon. Grown with purpose.",
       title: "Nourishing People.",
-      title2: "Protecting the Amazon for future generations",
-      description: "Naturally Nourishing",
-      description2: "Omega 3, 6 & 9",
-      description3: "Protein",
+      title2: "Protecting the Amazon",
+      description: "Omega 3, 6 & 9",
+      description2: "Protein",
+      description3: "Naturally Nourishing",
       cta: "Discover OMARÉ",
     },
     section2: {
@@ -252,7 +252,7 @@ const translations = {
     section1: {
       subtitle: "Nacida en la Amazonía. Cultivada con Propósito.",
       title: "Nutriendo personas.",
-      title2: "Protegiendo la Amazonía para las generaciones futuras",
+      title2: "Protegiendo la Amazonía",
       description: "Nutrici\u00f3n Natural",
       description2: "Omega 3, 6 & 9",
       description3: "Prote\u00edna",
