@@ -1615,6 +1615,10 @@ body.es .title-group {
     margin: 0 auto 0.5rem auto;
     shape-outside: none;
   }
+  .hero {
+    height: 100dvh;
+    max-height: 100dvh;
+  }
   .hero-text-content h3 {
     font-size: 1.15rem;
     font-weight: 400;
@@ -1876,7 +1880,8 @@ body.es .title-group {
     background-repeat: no-repeat;
     background-position: center;
     padding: 0.5rem;
-    height: 100vh;
+    height: 100dvh;
+    max-height: 100dvh;
   }
 
   .hero-content {
