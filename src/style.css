@@ -806,11 +806,52 @@ body.es .title-group {
 }
 /*                          MEDIA QUERIES                           */
 
+/* ── Desktop hero: shared background + text alignment (768px+) ── */
+@media (min-width: 768px) {
+  .hero {
+    background-image: url("../public/assets/img/bg-hero-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    padding-left: 5%;
+  }
+
+  /* Anchor hero-content to the left instead of auto-centering */
+  .hero-content {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  /* Inline bullet-separated descriptions */
+  .description-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    align-items: center;
+  }
+
+  .description + .description::before {
+    content: "•";
+    margin: 0 0.5rem;
+    color: currentColor;
+  }
+
+  /* Short golden accent line under the subtitle */
+  .hero-text-content h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #b9841d;
+    margin-top: 10px;
+  }
+}
+
 /*                          XXL DESKTOP                           */
 @media (min-width: 1536px) {
   .hero {
-    padding: 5rem 1rem 2rem 1.5rem;
-    justify-content: center;
+    padding: 5rem 1rem 2rem 5%;
+    justify-content: flex-start;
     /* height: 100dvh;
     min-height: 100dvh;
     max-height: 100dvh; */
@@ -830,14 +871,13 @@ body.es .title-group {
   .hero-text-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    justify-items: center;
     gap: 2rem;
     width: 55%;
     max-width: 800px;
-    text-align: center;
-    margin: 0 auto;
+    text-align: left;
+    margin: 0;
     padding-right: 1rem;
   }
 
@@ -845,7 +885,7 @@ body.es .title-group {
     font-size: 2rem;
     font-weight: 400;
     /* text-wrap: balance; */
-    text-align: center;
+    text-align: left;
     line-height: 1.3;
   }
 
@@ -853,6 +893,7 @@ body.es .title-group {
     gap: 2.3rem;
     margin-bottom: 20px;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .title-group h1 {
@@ -862,7 +903,6 @@ body.es .title-group {
 
   .description-group {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
   }
   .description {
@@ -1005,7 +1045,7 @@ body.es .title-group {
 /*                          XL DESKTOP                           */
 @media (min-width: 1440px) and (max-width: 1535px) {
   .hero {
-    padding: 5rem 1.8rem 2rem 1.5rem;
+    padding: 5rem 1.8rem 2rem 5%;
     /* height: 100dvh;
     min-height: 100dvh;
     max-height: 100dvh; */
@@ -1030,9 +1070,10 @@ body.es .title-group {
     gap: 4rem;
     width: 50%;
     max-width: 800px;
-    text-align: center;
-    margin: 0 auto;
+    text-align: left;
+    margin: 0;
     /* padding-right: 1rem; */
+    align-items: flex-start;
   }
   body.es .hero-text-content {
     width: 100%;
@@ -1042,7 +1083,7 @@ body.es .title-group {
     font-size: 1.8rem;
     font-weight: 400;
     text-wrap: balance;
-    text-align: center;
+    text-align: left;
     line-height: 1.3;
     margin-left: 0;
   }
@@ -1055,6 +1096,7 @@ body.es .title-group {
     gap: 1.5rem;
     margin-bottom: 10px;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .title-group h1 {
@@ -1165,11 +1207,12 @@ body.es .title-group {
   .hero-text-content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 2.5rem;
     width: 60%;
     max-width: 700px;
-    text-align: center;
-    margin: 0 auto;
+    text-align: left;
+    margin: 0;
     padding-right: 1rem;
     margin-top: 2rem;
     /* margin-bottom: 2rem; */
@@ -1179,7 +1222,7 @@ body.es .title-group {
     font-size: 1.9rem;
     font-weight: 400;
     text-wrap: balance;
-    text-align: center;
+    text-align: left;
     line-height: 1.3;
     margin-left: 0;
     margin-bottom: 0;
@@ -1192,6 +1235,7 @@ body.es .title-group {
     gap: 32px;
     margin-bottom: 20px;
     flex-direction: column;
+    align-items: flex-start;
     margin-top: 2.5rem;
   }
 
@@ -1297,30 +1341,34 @@ body.es .title-group {
     flex-wrap: nowrap;
     gap: 2rem;
     padding: 0 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    justify-content: flex-start;
+    margin-top: 3rem;
   }
   body.es .hero-content {
     margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
   .hero-text-content {
-    align-items: center;
-    gap: 2.6rem;
-    /* width: 60%; */
-    max-width: 650px;
-    text-align: center;
-    margin: 0 auto;
+    align-items: flex-start;
+    gap: 3rem;
+    width: 100%;
+    /* max-width: 650px; */
+    text-align: left;
+    margin: 0;
     padding-right: 1rem;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
   }
   body.es .hero-text-content {
-    gap: 2rem;
+    gap: 3rem;
   }
   .hero-text-content h3 {
     font-size: 1.7rem;
     font-weight: 400;
     text-wrap: balance;
-    text-align: center;
+    text-align: left;
     line-height: 1.3;
     margin-left: 0;
   }
@@ -1330,10 +1378,13 @@ body.es .title-group {
   }
   .title-group {
     flex-direction: column;
-    gap: 22px;
+    align-items: flex-start;
+    gap: 8px;
     margin-bottom: 10px;
   }
-
+  body.es .title-group {
+    align-items: flex-start;
+  }
   .title-group h1 {
     font-size: 2.8rem;
   }
@@ -1410,6 +1461,7 @@ body.es .title-group {
 @media (min-width: 960px) and (max-width: 1023px) {
   .hero {
     padding: 1rem;
+    padding-left: 5%;
   }
 
   .hero-content {
@@ -1420,12 +1472,12 @@ body.es .title-group {
   }
 
   .hero-text-content {
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
     width: 65%;
     max-width: 600px;
-    text-align: center;
-    margin: 0 auto;
+    text-align: left;
+    margin: 0;
   }
   body.es .hero-text-content {
     width: 70%;
@@ -1435,7 +1487,7 @@ body.es .title-group {
     font-size: 1.8rem;
     font-weight: 400;
     text-wrap: balance;
-    text-align: center;
+    text-align: left;
     line-height: 1.3;
   }
   body.es .hero-text-content h3 {
@@ -1445,6 +1497,7 @@ body.es .title-group {
 
   .title-group {
     flex-direction: column;
+    align-items: flex-start;
     gap: 20px;
     margin-bottom: 20px;
   }
@@ -1525,6 +1578,7 @@ body.es .title-group {
   }
   .hero {
     padding: 1.5rem;
+    padding-left: 5%;
   }
 
   .hero-content {
@@ -1535,19 +1589,18 @@ body.es .title-group {
   }
 
   .hero-text-content {
-    width: 100%;
+    width: 55%;
     max-width: 600px;
-    text-align: center;
-    align-items: center;
+    text-align: left;
+    align-items: flex-start;
     gap: 2.5rem;
-    margin: 0 auto;
+    margin: 0;
     margin-top: 5rem;
   }
 
   .hero-text-content h3 {
     font-size: 1.6rem;
     margin-left: 0;
-    width: 45%;
     text-wrap: pretty;
   }
   body.es .hero-content {
@@ -1555,6 +1608,7 @@ body.es .title-group {
   }
   .title-group {
     flex-direction: column;
+    align-items: flex-start;
     gap: 25px;
   }
 

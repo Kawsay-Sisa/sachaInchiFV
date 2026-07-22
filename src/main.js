@@ -253,9 +253,9 @@ const translations = {
       subtitle: "Nacida en la Amazonía. Cultivada con Propósito.",
       title: "Nutriendo personas.",
       title2: "Protegiendo la Amazonía",
-      description: "Nutrici\u00f3n Natural",
-      description2: "Omega 3, 6 & 9",
-      description3: "Prote\u00edna",
+      description: "Omega 3, 6 & 9",
+      description2: "Prote\u00edna",
+      description3: "Nutrici\u00f3n Natural",
 
       cta: "Descubre OMARÉ",
     },
@@ -535,7 +535,6 @@ const toggle2 = document.getElementById("languageToggle2");
 
 languageToggle.forEach((el) => {
   el.addEventListener("change", (event) => {
-    console.log(`toggleando`);
 
     const selectedLanguage = event.target.checked ? "es" : "en";
     if (selectedLanguage === "es") {
@@ -615,8 +614,6 @@ document.addEventListener("mousemove", (e) => {
 //read more packaging section
 // Expandable content toggle
 function toggleExpand(contentId, button) {
-  console.log("expanding");
-
   const content = document.getElementById(contentId);
   const readText = button.querySelector(".read-text");
 
