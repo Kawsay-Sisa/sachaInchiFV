@@ -342,7 +342,7 @@ footer {
 }
 
 /* Hero decorative plant image */
-.hero-plant-decoration {
+/* .hero-plant-decoration {
   position: absolute;
   align-self: center;
   width: 55%;
@@ -350,6 +350,21 @@ footer {
   right: -5rem;
   transform: scaleX(-1);
   height: 65dvh;
+  object-fit: fill;
+  object-position: center;
+  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.15));
+  pointer-events: none;
+  z-index: 1;
+} */
+
+.hero-plant-decoration {
+  position: absolute;
+  align-self: center;
+  /* width: 55%; */
+  bottom: 0;
+  right: 0;
+  /* transform: scaleX(-1); */
+  /* height: 65dvh; */
   object-fit: fill;
   object-position: center;
   filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.15));
@@ -533,7 +548,6 @@ body.es .title-group {
     width 0.6s,
     height 0.6s;
 }
-
 
 .cta-button span {
   position: relative;
@@ -919,10 +933,10 @@ body.es .title-group {
 
   /* Hero plant decoration */
   .hero-plant-decoration {
-    width: 35%;
-    height: 75dvh;
-    top: -4rem;
-    right: -3rem;
+    /* width: 35%; */
+    /* height: 75dvh; */
+    bottom: 0;
+    right: -1rem;
   }
 
   /* Section 3 */
@@ -1192,6 +1206,7 @@ body.es .title-group {
     flex-wrap: nowrap;
     gap: 2rem;
     margin-bottom: 1rem;
+    margin-top: 5rem;
     padding: 0 2rem;
   }
   body.es .hero-content {
@@ -1206,8 +1221,8 @@ body.es .title-group {
     max-width: 700px;
     text-align: left;
     margin: 0;
-    padding-right: 1rem;
-    margin-top: 2rem;
+    /* padding-right: 1rem; */
+    margin-top: 0rem;
     /* margin-bottom: 2rem; */
   }
 
@@ -1263,10 +1278,10 @@ body.es .title-group {
 
   /* Hero plant decoration */
   .hero-plant-decoration {
-    width: 35%;
-    height: 68dvh;
-    top: -3rem;
-    right: -2rem;
+    /* width: 35%; */
+    /* height: 68dvh; */
+    /* top: -3rem; */
+    right: -4rem;
   }
 
   /* Sect 3 */
@@ -1329,6 +1344,9 @@ body.es .title-group {
 }
 /*                          LAPTOP                           */
 @media (min-width: 1024px) and (max-width: 1279px) {
+  /* .hero {
+    background-image: url("../public/assets/img/bg-hero-desktop.png");
+  } */
   .hero-content {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1349,8 +1367,9 @@ body.es .title-group {
     width: 100%;
     max-width: 650px;
     text-align: left;
-    margin: 0;
-    padding-right: 1rem;
+    margin: 0 auto;
+    padding-left: 0.5rem;
+    padding-right: 0;
     margin-top: 4rem;
     /* margin-bottom: 2rem; */
   }
@@ -1383,7 +1402,7 @@ body.es .title-group {
   }
   .description {
     font-size: 1.3rem;
-    
+
     line-height: 1.4;
     margin-bottom: 0;
   }
@@ -1402,10 +1421,10 @@ body.es .title-group {
 
   /* Hero plant decoration */
   .hero-plant-decoration {
-    width: 38%;
-    height: 65dvh;
-    top: -2.5rem;
-    right: -2rem;
+    /* width: 38%; */
+    /* height: 65dvh; */
+    bottom: 0;
+    right: -4rem;
   }
 
   /* Sect 3 */
@@ -1529,7 +1548,6 @@ body.es .title-group {
     top: -2rem;
     right: -2.5rem;
   }
-
 
   .header {
     min-height: 180px;
