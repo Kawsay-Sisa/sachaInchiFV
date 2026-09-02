@@ -1279,3 +1279,36 @@ function createProteinChart(userLanguage) {
 createOmegaChart(userLanguage);
 createSeedsChart(userLanguage);
 createProteinChart(userLanguage);
+
+//*Play video at the end of OUR VALUES page.
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const video = document.querySelector("#videoCynSacha");
+  console.log({ video })
+  
+  const observerOptions = {
+    root: null,
+    threshold: 0.5, // 0.0 = 1px visible, 1.0 = 100% fully visible
+  };
+
+  const handleIntersection = (entries) => {
+    entries.forEach((entry) => {
+      //check if the video meets the visibility threshold
+      if (entry.isIntersecting) {
+        video.play().catch((err) => {
+          console.error('Autoplay prevented by browser'. err)
+        })
+        video.muted = false
+      } else {
+        video.pause()
+      }
+    })
+  }
+
+  const observer = new IntersectionObserver(handleIntersection, observerOptions)
+
+  if (video) {
+    observer.observe(video)
+  }
+})
