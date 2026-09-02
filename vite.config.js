@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig(({ mode }) => ({
-  base: mode === "gh" ? "https://arenascode.github.io/sachaInchiFV" : "/",
+  base: mode === "gh" ? "https://www.omareliving.com/" : "/",
 
   build: {
     outDir: "dist",
