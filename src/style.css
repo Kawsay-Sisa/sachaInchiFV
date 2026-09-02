@@ -1062,7 +1062,7 @@ body.es .title-group {
     overflow: hidden;
     padding: 0 2rem;
     margin-top: 1rem;
-    justify-content: flex-start;
+    justify-content: center;
   }
   body.es .hero-content {
     margin-top: 1.5rem;
@@ -1070,13 +1070,12 @@ body.es .title-group {
   .hero-text-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 4rem;
     width: 50%;
-    max-width: 800px;
+    max-width: 900px;
     text-align: left;
     margin: 0;
-    /* padding-right: 1rem; */
+    margin-right: 10rem;
     align-items: flex-start;
   }
   body.es .hero-text-content {
@@ -1130,10 +1129,10 @@ body.es .title-group {
 
   /* Hero plant decoration */
   .hero-plant-decoration {
-    width: 32%;
-    height: 72dvh;
-    top: -3.5rem;
-    right: -2.5rem;
+    /* width: 32%; */
+    /* height: 72dvh; */
+    top: 2rem;
+    /* right: -2.5rem; */
   }
 
   /* Section 3 */
