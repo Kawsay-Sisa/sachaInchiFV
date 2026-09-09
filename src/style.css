@@ -1078,20 +1078,21 @@ body.es .title-group {
   .hero-text-content {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    width: 50%;
+    gap: 6rem;
+    width: 70%;
     max-width: 900px;
     text-align: left;
     margin: 0;
-    margin-right: 10rem;
     align-items: flex-start;
+    padding-left: 1rem;
   }
   body.es .hero-text-content {
     width: 100%;
-    gap: 4rem;
+    /* gap: 5rem; */
   }
   .hero-text-content h3 {
-    font-size: 1.8rem;
+    font-size: 1.85rem;
+    width: 60%;
     font-weight: 400;
     text-wrap: balance;
     text-align: left;
@@ -1104,22 +1105,34 @@ body.es .title-group {
     text-wrap: balance;
   }
   .title-group {
-    gap: 1.2rem;
-    margin-bottom: 10px;
+    gap: 0.7rem;
+    margin-bottom: 0;
     flex-direction: column;
     align-items: flex-start;
+    &::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 1px;
+      background-color: #b9841d;
+      margin-top: 15px;
+      align-self: baseline;
+    }
   }
   body.es .title-group {
-    gap: 1.2rem;
+    /* width: 90%; */
+    /* gap: 1rem; */
   }
   .title-group h1 {
     align-self: flex-start;
-    font-size: 3.2rem;
+    font-size: 5rem;
     text-shadow: 5px 4px 4px rgba(28, 45, 21, 0.25);
   }
-
+ body.es .title-group h1 {
+    font-size: 4.5rem;
+  }
   .description {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.5;
     margin-bottom: 0;
   }
@@ -1127,7 +1140,7 @@ body.es .title-group {
   .cta-button {
     margin-top: 40px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 26px;
   }
   .charImage {
     width: 110px;
@@ -1284,9 +1297,6 @@ body.es .title-group {
 
   /* Hero plant decoration */
   .hero-plant-decoration {
-    /* width: 35%; */
-    /* height: 68dvh; */
-    /* top: -3rem; */
     right: -4rem;
     bottom: 0;
   }
@@ -1352,6 +1362,7 @@ body.es .title-group {
     height: 400px;
   }
 }
+
 /*                          LAPTOP                           */
 @media (min-width: 1024px) and (max-width: 1279px) {
   /* .hero {
