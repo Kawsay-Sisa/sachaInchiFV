@@ -441,6 +441,14 @@ body.es .hero-text-content h3 {
   gap: 25px;
   margin-bottom: 10px;
   animation: fadeInUp 0.8s ease-out 0.6s backwards;
+  &::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: #b9841d;
+    margin-top: 5px;
+  }
 }
 body.es .title-group {
   display: flex;
@@ -1206,7 +1214,6 @@ body.es .title-group {
     gap: 2rem;
     margin-bottom: 1rem;
     margin-top: 5rem;
-    padding: 0 2rem;
   }
   body.es .hero-content {
     margin: auto;
@@ -1215,7 +1222,7 @@ body.es .title-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2.5rem;
+    gap: 4rem;
     width: 60%;
     max-width: 700px;
     text-align: left;
@@ -1224,9 +1231,12 @@ body.es .title-group {
     margin-top: 0rem;
     /* margin-bottom: 2rem; */
   }
-
+  body.es .hero-text-content {
+    gap: 2.5rem;
+  }
   .hero-text-content h3 {
     font-size: 1.9rem;
+    width: 50%;
     font-weight: 400;
     text-wrap: balance;
     text-align: left;
@@ -1235,26 +1245,23 @@ body.es .title-group {
     margin-bottom: 0;
   }
   body.es .hero-text-content h3 {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     text-wrap: balance;
+    width: 60%;
   }
   .title-group {
-    gap: 32px;
+    gap: 10px;
     margin-bottom: 20px;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 2.5rem;
+    margin-top: 2.2rem;
   }
-
+  body.es .title-group {
+    align-items: flex-start;
+  }
   .title-group h1 {
-    font-size: 3.3rem;
+    font-size: 4.5rem;
     text-shadow: 5px 2px 3px rgba(28, 45, 21, 0.25);
-  }
-
-  .seed-divider {
-    width: 180px;
-    height: 130px;
-    opacity: 1;
   }
 
   .description {
@@ -1272,7 +1279,7 @@ body.es .title-group {
   .charImage {
     width: 110px;
     height: 110px;
-    margin-bottom: -65px;
+    margin-bottom: -70px;
   }
 
   /* Hero plant decoration */
@@ -1281,8 +1288,12 @@ body.es .title-group {
     /* height: 68dvh; */
     /* top: -3rem; */
     right: -4rem;
+    bottom: 0;
   }
 
+  body.es .hero-plant-decoration {
+    right: -2rem;
+  }
   /* Sect 3 */
   .header {
     min-height: 230px;
