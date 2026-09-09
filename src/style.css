@@ -876,7 +876,8 @@ body.es .title-group {
     flex-wrap: nowrap;
     overflow: hidden;
     gap: 2rem;
-    padding: 0 2rem;
+    padding-right: 6rem;
+    margin: 0;
   }
 
   .hero-text-content {
@@ -884,12 +885,12 @@ body.es .title-group {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 2rem;
-    width: 55%;
+    gap: 7rem;
+    width: 70%;
     max-width: 800px;
     text-align: left;
     margin: 0;
-    padding-right: 1rem;
+    padding-right: 3rem;
   }
 
   .hero-text-content h3 {
@@ -898,17 +899,19 @@ body.es .title-group {
     /* text-wrap: balance; */
     text-align: left;
     line-height: 1.3;
+    margin: 0;
+    width: 50%;
   }
 
   .title-group {
-    gap: 2.3rem;
+    gap: 0.5rem;
     margin-bottom: 20px;
     flex-direction: column;
     align-items: flex-start;
   }
 
   .title-group h1 {
-    font-size: 3.5rem;
+    font-size: 5.2rem;
     text-shadow: 1px 2px 4px rgb(28 45 21 / 45%);
   }
 
@@ -917,7 +920,7 @@ body.es .title-group {
     align-items: center;
   }
   .description {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     line-height: 1.5;
     text-wrap: balance;
     margin-bottom: 0;
@@ -930,7 +933,7 @@ body.es .title-group {
   .cta-button {
     margin-top: 24px;
     padding: 10px 13px;
-    font-size: 22px;
+    font-size: 28px;
   }
 
   .charImage {
@@ -988,7 +991,7 @@ body.es .title-group {
 @media (min-width: 1800px) {
   .hero-content {
     height: auto;
-    max-width: 1451px;
+    max-width: 1600px;
     flex-direction: row;
     width: 100%;
     flex-wrap: nowrap;
@@ -996,6 +999,7 @@ body.es .title-group {
     gap: 2rem;
     padding: 0 2rem;
     margin-top: 4.5rem;
+
   }
   body.es .hero-content {
     margin-top: 4.5rem;
@@ -1005,20 +1009,22 @@ body.es .title-group {
   }
 
   .hero-text-content h3 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    width: 50%;
   }
 
   .title-group {
     gap: 1rem;
     margin-bottom: 10px;
+    width: 100%;
   }
 
   .title-group h1 {
-    font-size: 3.8rem;
+    font-size: 7rem;
   }
 
   .description {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .charImage {
