@@ -79,8 +79,8 @@ const translations = {
   en: {
     section1: {
       subtitle: "Born in the Amazon. Grown with purpose.",
-      title: "Nourishing People.",
-      title2: "Protecting the Amazon",
+      title: "Nourish Life.",
+      title2: "Power Your Move.",
       description: "Omega 3, 6 & 9",
       description2: "Protein",
       description3: "Naturally Nourishing",
@@ -251,8 +251,8 @@ const translations = {
   es: {
     section1: {
       subtitle: "Nacida en la Amazonía. Cultivada con Propósito.",
-      title: "Nutriendo personas.",
-      title2: "Protegiendo la Amazonía",
+      title: "Nutre Tu Vida.",
+      title2: "Impulsa Tu Movimiento.",
       description: "Omega 3, 6 & 9",
       description2: "Prote\u00edna",
       description3: "Nutrici\u00f3n Natural",
