@@ -342,21 +342,6 @@ footer {
 }
 
 /* Hero decorative plant image */
-/* .hero-plant-decoration {
-  position: absolute;
-  align-self: center;
-  width: 55%;
-  top: -6rem;
-  right: -5rem;
-  transform: scaleX(-1);
-  height: 65dvh;
-  object-fit: fill;
-  object-position: center;
-  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.15));
-  pointer-events: none;
-  z-index: 1;
-} */
-
 .hero-plant-decoration {
   position: absolute;
   align-self: center;
@@ -879,7 +864,10 @@ body.es .title-group {
     padding-right: 6rem;
     margin: 0;
   }
-
+  body.es .hero-content {
+    max-width: 1800px;
+    margin-top: 0;
+  }
   .hero-text-content {
     display: flex;
     flex-direction: column;
@@ -902,14 +890,19 @@ body.es .title-group {
     margin: 0;
     width: 50%;
   }
-
+  body.es .hero-text-content h3 {
+    font-size: 1.9rem;
+    width: 60%;
+  }
   .title-group {
     gap: 0.5rem;
     margin-bottom: 20px;
     flex-direction: column;
     align-items: flex-start;
   }
-
+  body.es .title-group {
+    align-items: flex-start;
+  }
   .title-group h1 {
     font-size: 5.2rem;
     text-shadow: 1px 2px 4px rgb(28 45 21 / 45%);
@@ -947,9 +940,11 @@ body.es .title-group {
     /* width: 35%; */
     /* height: 75dvh; */
     bottom: 0;
-    right: -1rem;
+    /* right: -1rem; */
   }
-
+  body.es .hero-plant-decoration {
+    right: 0;
+  }
   /* Section 3 */
   .header {
     min-height: 250px;
@@ -999,7 +994,6 @@ body.es .title-group {
     gap: 2rem;
     padding: 0 2rem;
     margin-top: 4.5rem;
-
   }
   body.es .hero-content {
     margin-top: 4.5rem;
@@ -1134,7 +1128,7 @@ body.es .title-group {
     font-size: 5rem;
     text-shadow: 5px 4px 4px rgba(28, 45, 21, 0.25);
   }
- body.es .title-group h1 {
+  body.es .title-group h1 {
     font-size: 4.5rem;
   }
   .description {
