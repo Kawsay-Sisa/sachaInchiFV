@@ -986,25 +986,31 @@ body.es .title-group {
 @media (min-width: 1800px) {
   .hero-content {
     height: auto;
-    max-width: 1600px;
+    max-width: 1200px;
     flex-direction: row;
     width: 100%;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     overflow: hidden;
     gap: 2rem;
     padding: 0 2rem;
+    margin: 0 auto;
     margin-top: 4.5rem;
   }
   body.es .hero-content {
     margin-top: 4.5rem;
   }
   .hero-text-content {
-    gap: 4rem;
+    gap: 9rem;
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 0;
   }
 
   .hero-text-content h3 {
     font-size: 2rem;
-    width: 50%;
+    width: 30%;
   }
 
   .title-group {
@@ -1018,17 +1024,25 @@ body.es .title-group {
   }
 
   .description {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
 
   .charImage {
-    width: 110px;
-    height: 110px;
-    margin-bottom: -3rem;
+    width: 140px;
+    height: 140px;
+    margin-bottom: -3.6rem;
+  }
+  /* Hero plant decoration */
+  .hero-plant-decoration {
+    height: 100%;
+    bottom: 0;
+  }
+  body.es .hero-plant-decoration {
+    right: 0;
   }
   .cta-button {
     margin-top: 16px;
-    font-size: 22px;
+    font-size: 32px;
   }
 
   .section4-description {
