@@ -804,7 +804,7 @@ body.es .title-group {
 /* ── Desktop hero: shared background + text alignment (768px+) ── */
 @media (min-width: 768px) {
   .hero {
-    /* background-image: url("../public/assets/img/bg-hero-desktop.png"); */
+    background-image: url("../public/assets/img/bg-hero-desktop.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -1311,8 +1311,8 @@ body.es .title-group {
 
   /* Hero plant decoration */
   .hero-plant-decoration {
-    right: -4rem;
-    bottom: 0;
+    right: -5rem;
+    bottom: -140px;
   }
 
   /* Sect 3 */
@@ -1400,9 +1400,9 @@ body.es .title-group {
     max-width: 650px;
     text-align: left;
     margin: 0 auto;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     padding-right: 0;
-    margin-top: 2rem;
+    margin-top: 0;
     /* margin-bottom: 2rem; */
   }
   body.es .hero-text-content {
@@ -1465,8 +1465,8 @@ body.es .title-group {
     /* width: 38%; */
     /* height: 65dvh; */
     height: 100dvh;
-    bottom: 0;
-    right: -4rem;
+    bottom: -30px;
+    right: -3rem;
   }
 
   /* Sect 3 */
