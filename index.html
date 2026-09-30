@@ -6,16 +6,37 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
     <link rel="stylesheet" href="./src/style.css" />
+    <!-- AOS kept as its own stylesheet rather than bundled into src/style.css,
+         because bosqueSeco.html loads that file and pulls AOS from unpkg itself.
+         Served locally to drop a render-blocking third-party origin. -->
+    <link rel="stylesheet" href="/assets/vendor/aos/aos.css" />
     <link
-      rel="shortcut icon"
-      href="/assets/img/guayacanTree.webp"
-      type="image/x-icon"
+      rel="icon"
+      href="./src/assets/img/guayacanTree-64.png"
+      type="image/png"
+      sizes="64x64"
+    />
+    <link
+      rel="preload"
+      href="./src/assets/fonts/lora-normal-400_700-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./src/assets/fonts/playfair-display-normal-400_900-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./src/assets/fonts/noto-serif-italic-600-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
     <meta
       name="description"
@@ -82,10 +103,11 @@
                 Omaré <sup class="text-lg align-super">™</sup>
               </h1>
               <img
-                src="./public/assets/img/guayacanTree.webp"
+                src="./src/assets/img/guayacanTree-64.png"
                 width="48"
-                alt=""
-              />
+                height="48"
+                alt="" decoding="async"
+        />
             </a>
           </div>
           <div
@@ -121,21 +143,22 @@
               />
               <label for="languageToggle2" class="switch w-max">
                 <span class="language en"
-                  ><img src="/assets/icons/eeuu.png" alt="eeuuFlag" width="20"
-                /></span>
+                  ><img src="/assets/icons/eeuu.png" alt="eeuuFlag" width="20" decoding="async"
+        /></span>
                 <span class="language es"
                   ><img
                     src="/assets/icons/spain.png"
                     alt="SpainFlag"
-                    width="20"
-                /></span>
+                    width="20" decoding="async"
+        /></span>
               </label>
             </div>
             <button
               id="hamburger-btn"
               class="toggleMobileMenu bg-transparent w-8 flex mr-1 place-content-end sm:hidden xl:hidden"
             >
-              <img src="/assets/icons/menuMobile.webp" alt="menuMobile" />
+              <img src="/assets/icons/menuMobile.webp" alt="menuMobile" decoding="async"
+        />
             </button>
           </div>
 
@@ -145,8 +168,8 @@
                 <img
                   src="/assets/icons/close.png"
                   alt="closeButton"
-                  width="26px"
-                />
+                  width="26px" decoding="async"
+        />
               </button>
               <ul class="links_menu text-sand font-semibold">
                 <li><a href="#" data-role="home">Home</a></li>
@@ -166,15 +189,13 @@
                 <!-- <li class="flex gap-8">
                   <div id="IGRedirect" class="w-8">
                     <a href="https://www.instagram.com" target="_blank"
-                      ><img src="/assets/icons/instagram.webp" alt="IG"
-                    /></a>
+                      ><img src="/assets/icons/instagram.webp" alt="IG" loading="lazy" /></a>
                   </div>
                   <div id="WTSPRedirect" class="w-8">
                     <a href="https://wa.link" target="_blank"
                       ><img
                         src="/assets/icons/whatsapp.webp"
-                        alt="whatsappIcon"
-                    /></a>
+                        alt="whatsappIcon" loading="lazy" /></a>
                   </div>
                 </li> -->
               </ul>
@@ -184,19 +205,46 @@
       </div>
     </nav>
     <div class="hero bg-sandy-gradient" id="section1">
+      <picture class="hero-bg">
+        <source
+          media="(max-width: 767px)"
+          srcset="./src/assets/img/bg-hero-mobile.webp"
+        />
+        <img
+          src="./assets/img/bg-hero.png"
+          alt=""
+          width="1536"
+          height="1024"
+          fetchpriority="high"
+          decoding="async" />
+      </picture>
+      <picture class="hero-sacha-vine z-10 absolute top-0 right-0 lg:w-[21rem] lg:top-[4px]">
+        <source
+          media="(max-width: 767px)"
+          srcset="./src/assets/img/bg-hero-mobile.webp"
+        />
+        <img
+          src="./assets/img/sachaInchi-vine.png"
+          alt=""
+          fetchpriority="high"
+          decoding="async" />
+      </picture>
       <div class="hero-content">
         <div class="hero-text-content highlight">
+          <!-- Copy below matches translations.en.section1 so the first paint is
+               already correct. Previously it shipped different words and
+               updateTranslations() rewrote them after the bundle ran. -->
           <h3 data-role="subtitle" class="text-shadow-xl text-bodyText">
-            Born in the Amazon. Built to regenerate.
+            Born in the Amazon. Grown with purpose.
           </h3>
 
           <div class="copy-group">
             <div class="title-group">
               <h1 data-role="title" class="text-shadow-sm text-darkGreen">
-                Nourishing People.
+                Nourish Life.
               </h1>
               <h1 data-role="title2" class="highlight text-shadow-sm">
-                Protecting the Amazon for future generations
+                Power Your Move.
               </h1>
             </div>
             <div class="description-group">
@@ -204,19 +252,19 @@
                 class="description text-bodyText text-shadow-md"
                 data-role="description"
               >
-                Naturally Nourishing
+                Omega 3, 6 &amp; 9
               </p>
               <p
                 class="description text-bodyText text-shadow-md"
                 data-role="description2"
               >
-                Omega 3, 6 &amp; 9
+                Protein
               </p>
               <p
                 class="description text-bodyText text-shadow-md"
                 data-role="description3"
               >
-                Protein
+                Naturally Nourishing
               </p>
             </div>
           </div>
@@ -227,7 +275,9 @@
               src="assets/img/sachaInchiCharSitting.webp"
               alt="Sanchi character"
               class="charImage"
-            />
+              width="200"
+              height="200"
+              decoding="async" />
             <button
               id="moreInfoHero"
               class="cta-button bg-darkGreen"
@@ -242,13 +292,17 @@
         src="/assets/img/seedFlowers.webp"
         alt="sacha inchi seeds"
         class="absolute left-[-0.9px] md:top-2 lg:top-7 w-[20%] xl:w-[20%] 2xl:w-[18%] hidden lg:block z-10 lg:h-full object-cover object-top md:mr-2 xl:mr-3 2xl:mr-5 sombra-sacha-inchi"
-      />
+        width="768"
+        height="1024"
+        decoding="async"
+        />
       <!-- <img
         src="/assets/img/bg-plant-desktop-v3.webp"
         alt="sacha inchi plant"
-        class="hero-plant-decoration hidden lg:block"
-      /> -->
+        class="hero-plant-decoration hidden lg:block" loading="lazy" /> -->
     </div>
+    <!-- Decorative transition line: hero sandy gradient -> section 3 cream. -->
+    <div class="hero-divider" aria-hidden="true"></div>
     <section
       id="section3"
       class="whatIsSachaInchi bg-emerald-gradient relative w-full h-auto flex flex-col bg-repeat bg-cover bg-center text-white parallax sm:px-5 md:px-0 xl:justify-center pb-0"
@@ -287,8 +341,7 @@
             <img
               src="/assets/img/sacha-inchi-granos.webp"
               alt="sacha inchi seed"
-              class="h-full w-full object-cover object-left"
-            />
+              class="h-full w-full object-cover object-left" decoding="async" loading="lazy" />
           </div>
         </div>
 
@@ -307,8 +360,7 @@
               <img
                 src="/assets/img/sacha2.webp"
                 alt="Man Harvesting Sacha Inchi"
-                class="object-cover w-full h-full rounded-lg"
-              />
+                class="object-cover w-full h-full rounded-lg" decoding="async" loading="lazy" />
             </div>
 
             <!-- right text -->
@@ -354,8 +406,7 @@
               <img
                 src="/assets/img/people-smiling.webp"
                 alt="Right"
-                class="object-cover w-full h-full rounded-lg"
-              />
+                class="object-cover w-full h-full rounded-lg" decoding="async" loading="lazy" />
             </div>
           </div>
           <div
@@ -370,8 +421,7 @@
               <img
                 src="/assets/img/biosphereCollage.webp"
                 alt="Amazon nature collage"
-                class="w-full h-full rounded-lg"
-              />
+                class="w-full h-full rounded-lg" decoding="async" loading="lazy" />
             </div>
             <!-- Right text -->
             <div class="md:w-1/2 w-full p-6 pt-1 text-center">
@@ -460,8 +510,7 @@
           <img
             src="/assets/img/InchiChar2.webp"
             alt="Inchi character"
-            class="w-20 lg:w-24 xl:w-36 h-auto"
-          />
+            class="w-20 lg:w-24 xl:w-36 h-auto" decoding="async" loading="lazy" />
           <span
             class="font-semibol italic text-[0.95rem] lg:text-base xl:text-xl text-petroleumBlue"
             data-role="cta"
@@ -497,8 +546,7 @@
                   <img
                     src="/assets/icons/quimica.png"
                     alt="Mineral"
-                    width="48"
-                  />
+                    width="48" decoding="async" loading="lazy" />
                 </div>
                 <div
                   class="benefit sm:text-[1.4rem] text-xl xl:text-2xl font-bold group-hover:translate-y-1 transition-transform relative tracking-wide"
@@ -515,8 +563,7 @@
                   <img
                     src="/assets/icons/cerrar.webp"
                     alt="closeButton"
-                    width="16"
-                  />
+                    width="16" decoding="async" loading="lazy" />
                 </button>
                 <article class="card-body p-[0.5rem]">
                   <!-- Card Title -->
@@ -572,8 +619,7 @@
                   <img
                     src="/assets/icons/musculo.png"
                     alt="muscle"
-                    width="38"
-                  />
+                    width="38" decoding="async" loading="lazy" />
                 </div>
                 <div
                   class="benefit sm:text-2xl text-xl xl:text-2xl font-bold text-white group-hover:translate-y-1 transition-transform relative tracking-wide"
@@ -590,8 +636,7 @@
                   <img
                     src="/assets/icons/cerrar.webp"
                     alt="closeButton"
-                    width="16"
-                  />
+                    width="16" decoding="async" loading="lazy" />
                 </button>
                 <div class="card-body p-[0.5rem] text-petroleumBlue">
                   <!-- Card Title -->
@@ -672,8 +717,7 @@
                   <img
                     src="/assets/icons/cerrar.webp"
                     alt="closeButton"
-                    width="16"
-                  />
+                    width="16" decoding="async" loading="lazy" />
                 </button>
                 <div
                   class="card-body text-petroleumBlue font-medium p-[0.5rem]"
@@ -732,7 +776,7 @@
                 <div
                   class="benefit text-4xl mb-4 text-white group-hover:scale-110 transition-transform relative lg:flex lg:justify-center"
                 >
-                  <img src="/assets/icons/starSkin.png" alt="skin" width="38" />
+                  <img src="/assets/icons/starSkin.png" alt="skin" width="38" decoding="async" loading="lazy" />
                 </div>
                 <div
                   class="benefit sm:text-2xl text-xl xl:text-2xl font-bold group-hover:translate-y-1 transition-transform relative tracking-wide"
@@ -749,8 +793,7 @@
                   <img
                     src="/assets/icons/cerrar.webp"
                     alt="closeButton"
-                    width="16"
-                  />
+                    width="16" decoding="async" loading="lazy" />
                 </button>
                 <div
                   class="card-body font-medium text-petroleumBlue p-[0.5rem]"
@@ -839,8 +882,7 @@
                   <img
                     src="/assets/icons/cerrar.webp"
                     alt="closeButton"
-                    width="16"
-                  />
+                    width="16" decoding="async" loading="lazy" />
                 </button>
                 <div
                   class="card-body font-medium text-petroleumBlue p-[0.5rem]"
@@ -924,8 +966,7 @@
                   <img
                     src="/assets/icons/cerrar.webp"
                     alt="closeButton"
-                    width="16"
-                  />
+                    width="16" decoding="async" loading="lazy" />
                 </button>
                 <div
                   class="card-body text-petroleumBlue font-medium p-[0.5rem]"
@@ -987,8 +1028,7 @@
                   <img
                     src="/assets/icons/mineral.png"
                     alt="Mineral"
-                    width="38"
-                  />
+                    width="38" decoding="async" loading="lazy" />
                 </div>
                 <div
                   class="benefit sm:text-2xl text-xl xl:text-2xl font-bold group-hover:translate-y-1 transition-transform relative tracking-wide"
@@ -1005,8 +1045,7 @@
                   <img
                     src="/assets/icons/cerrar.webp"
                     alt="closeButton"
-                    width="16"
-                  />
+                    width="16" decoding="async" loading="lazy" />
                 </button>
                 <div
                   class="card-body font-medium text-petroleumBlue p-[0.5rem]"
@@ -1132,8 +1171,7 @@
             <img
               src="assets/img/sachaInchiMix.webp"
               class="w-full h-full object-cover"
-              alt="Sacha Mix Product"
-            />
+              alt="Sacha Mix Product" decoding="async" loading="lazy" />
           </div>
           <div
             class="p-5 sm:p-6 md:p-5 lg:p-5 xl:p-6 2xl:p-7 flex flex-col grow justify-start min-h-[220px] sm:min-h-[240px] md:min-h-[220px] lg:min-h-[200px] xl:min-h-[220px] 2xl:min-h-[240px]"
@@ -1179,8 +1217,7 @@
             <img
               src="assets/img/sachaInchiSalt.webp"
               class="w-full h-full object-cover"
-              alt="Sacha seeds product"
-            />
+              alt="Sacha seeds product" decoding="async" loading="lazy" />
           </div>
           <div
             class="p-5 sm:p-6 md:p-5 lg:p-5 xl:p-6 2xl:p-7 flex flex-col grow justify-start min-h-[220px] sm:min-h-[240px] md:min-h-[220px] lg:min-h-[200px] xl:min-h-[220px] 2xl:min-h-[240px]"
@@ -1225,8 +1262,7 @@
             <img
               src="assets/img/sachaInchiCacao.webp"
               class="w-full h-full object-cover"
-              alt="Sacha Cacao Seeds"
-            />
+              alt="Sacha Cacao Seeds" decoding="async" loading="lazy" />
           </div>
           <div
             class="p-5 sm:p-6 md:p-5 lg:p-5 xl:p-6 2xl:p-7 flex flex-col grow justify-start min-h-[220px] sm:min-h-[240px] md:min-h-[220px] lg:min-h-[200px] xl:min-h-[220px] 2xl:min-h-[240px]"
@@ -1320,8 +1356,7 @@
                   <img
                     src="assets/img/sugarcaneBagasseProcess.png"
                     alt="Sugar cane Bagasse Process"
-                    class="rounded-md h-full w-full object-cover"
-                  />
+                    class="rounded-md h-full w-full object-cover" decoding="async" loading="lazy" />
                 </div>
               </div>
 
@@ -1333,8 +1368,7 @@
                     <img
                       src="assets/img/sucarCane.png"
                       alt="Sugar cane stalks"
-                      class="w-full h-48 sm:h-64 object-cover"
-                    />
+                      class="w-full h-48 sm:h-64 object-cover" decoding="async" loading="lazy" />
                   </div>
 
                   <!-- Feature 1 - Renewable Source -->
@@ -1479,8 +1513,7 @@
                     <img
                       src="assets/img/sugarcane1.png"
                       alt="Sugarcane processing"
-                      class="w-full h-48 sm:h-64 object-cover"
-                    />
+                      class="w-full h-48 sm:h-64 object-cover" decoding="async" loading="lazy" />
                   </div>
 
                   <!-- Feature 3 - Lower Environmental Footprint -->
@@ -1575,8 +1608,7 @@
                     <img
                       src="assets/img/sugarCane3.png"
                       alt="Bagasse paper texture"
-                      class="w-full h-48 sm:h-64 object-cover"
-                    />
+                      class="w-full h-48 sm:h-64 object-cover" decoding="async" loading="lazy" />
                   </div>
 
                   <!-- Feature 4 - Packaging with Purpose -->
@@ -1673,12 +1705,16 @@
           class="textBody max-w-full xl:max-w-7xl mx-auto rounded-lg p-4 lg:p-8 lg:pt-10 xl:pt-12 2xl:mt-8 xl:px-14 2xl:px-10"
         >
           <div class="text-wrap-container tex-wrap-sustainable-section">
+            <!-- No src on the markup: videoShowingPlant.mp4 is 1.19 MB and used
+                 to download during the initial page load, far below the fold.
+                 main.js attaches the source once the element nears the viewport,
+                 and starts playback only once enough of it has buffered. -->
             <video
-              src="/assets/video/videoShowingPlant.mp4"
-              autoplay
+              data-src="/assets/video/videoShowingPlant.mp4"
               muted
               loop
               playsinline
+              preload="none"
               class="w-full h-full object-cover circular-image"
             ></video>
 
@@ -1687,8 +1723,7 @@
               alt="hands holding planet earth"
               class="circular-image"
               data-aos="zoom-in"
-              data-aos-duration="2000"
-            /> -->
+              data-aos-duration="2000" loading="lazy" /> -->
 
             <div class="flowing-text mt-10 lg:mt-0">
               <p
@@ -1759,8 +1794,7 @@
                 <img
                   src="assets/img/founderPhoto.webp"
                   alt="Founder"
-                  class="w-full object-cover aspect-square rounded-full"
-                />
+                  class="w-full object-cover aspect-square rounded-full" decoding="async" loading="lazy" />
               </div>
             </div>
             <!-- Text Column -->
@@ -1823,8 +1857,7 @@
                 <img
                   src="assets/img/CynthiaSignature.webp"
                   alt="founder Signature"
-                  class="w-44"
-                />
+                  class="w-44" decoding="async" loading="lazy" />
               </div>
             </div>
           </div>
@@ -1855,8 +1888,7 @@
               <img
                 src="/assets/img/womenMakingYogaBlue.webp"
                 alt="woman making yoga"
-                class="w-96 opacity-60 lg:opacity-100 xl:w-full h-full lg:h-96 2xl:h-full object-cover"
-              />
+                class="w-96 opacity-60 lg:opacity-100 xl:w-full h-full lg:h-96 2xl:h-full object-cover" decoding="async" loading="lazy" />
             </div>
             <div
               class="right absolute top-[0] lg:relative xl:max-w-5xl sm:max-w-6xl lg:w-[50%] xl:w-[50%] sm:w-full md:rounded-lg p-6 pb-8 xl:p-5 backdrop-blur-[0px] lg:backdrop-blur-0 rounded-lg border border-white/10 md:border-none flex-1 lg:flex lg:flex-col lg:gap-4 xl:gap-1"
@@ -1888,8 +1920,7 @@
                 <img
                   src="/assets/img/InchiChar2.webp"
                   alt="Inchi character"
-                  class="w-36 sm:w-40 lg:w-56 h-auto absolute left-56 sm:bottom-1 sm:left-56 lg:left-[17rem] lg:bottom-0"
-                />
+                  class="w-36 sm:w-40 lg:w-56 h-auto absolute left-56 sm:bottom-1 sm:left-56 lg:left-[17rem] lg:bottom-0" decoding="async" loading="lazy" />
               </div>
             </div>
           </div>
@@ -2030,10 +2061,10 @@
     </footer>
 
     <script type="module" src="./src/main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="/assets/vendor/aos/aos.js"></script>
     <script>
-      AOS.init({
-        duration: 2000,
+      window.addEventListener("DOMContentLoaded", () => {
+        AOS.init({ duration: 2000 });
       });
     </script>
   </body>

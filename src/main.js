@@ -429,69 +429,20 @@ const translations = {
 };
 
 function updateTranslations(language) {
-  const heroContent = document.querySelector(".hero");
-  const heroContent_desc = heroContent.querySelector(".description");
-  const char_image = heroContent.querySelector(".charImage");
-
-  const window_width = window.innerWidth;
-
+  const heroContent_desc = document.querySelector(".hero .description");
   const body = document.body;
+
   if (language === "es") {
     body.classList.add("es");
-
     heroContent_desc.style.textWrap = "pretty";
-
-    if (window_width >= 1536) {
-      char_image.style.right = "20%";
-      char_image.style.bottom = "2.9%";
-    } else if (window_width >= 1440) {
-      char_image.style.right = "27%";
-      char_image.style.bottom = "2.8%";
-    } else if (window_width >= 1280) {
-      char_image.style.right = "15%";
-      char_image.style.bottom = "2.8%";
-    } else if (window_width >= 1024) {
-      char_image.style.right = "13%";
-      char_image.style.bottom = "3.2%";
-    } else if (window_width >= 960) {
-      char_image.style.right = "28%";
-      char_image.style.bottom = "4%";
-    } else if (window_width >= 768) {
-      char_image.style.right = "20%";
-      char_image.style.bottom = "4.8%";
-    } else if (window_width >= 400) {
-      char_image.style.right = "0";
-      char_image.style.bottom = "5%";
-    }
   } else {
     body.classList.remove("es");
-
-    if (window_width >= 1536) {
-      char_image.style.right = "14%";
-      char_image.style.bottom = "3.4%";
-    } else if (window_width >= 1440) {
-      char_image.style.right = "23%";
-      char_image.style.bottom = "3.2%";
-    } else if (window_width >= 1280) {
-      char_image.style.right = "10%";
-      char_image.style.bottom = "3.2%";
-    } else if (window_width >= 1024) {
-      char_image.style.right = "6%";
-      char_image.style.bottom = "3.3%";
-    } else if (window_width >= 960) {
-      char_image.style.right = "6%";
-      char_image.style.bottom = "4.5%";
-    } else if (window_width >= 768) {
-      char_image.style.right = "16%";
-      char_image.style.bottom = "4.9%";
-    } else if (window_width >= 480) {
-      char_image.style.right = "0";
-      char_image.style.bottom = "9.5%";
-    } else if (window_width >= 400) {
-      char_image.style.right = "-5%";
-      char_image.style.bottom = "5%";
-    }
   }
+
+  // The .charImage right/bottom offsets that used to be set here are gone.
+  // .charImage is position: static, so those percentages never affected
+  // layout at any breakpoint; the image is placed by flexbox (align-self /
+  // margin-bottom) in src/style.css. Re-adding them would be dead code.
 
   Object.keys(translations[language]).forEach((sectionId) => {
     const sectionData = translations[language][sectionId];
@@ -553,9 +504,10 @@ languageToggle.forEach((el) => {
   el.checked = userLanguage === "es";
 });
 
+// This module is deferred, so the DOM is already parsed here. The previous
+// second call on window "load" existed to re-measure the hero after images
+// settled; with the inline positioning gone, one pass is enough.
 updateTranslations(userLanguage);
-
-window.addEventListener("load", () => updateTranslations(userLanguage));
 
 // *Packaging Section*
 // Scroll reveal animation
@@ -575,6 +527,66 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll(".section-reveal").forEach((el) => {
   observer.observe(el);
 });
+
+// Deferred hero video.
+// videoShowingPlant.mp4 is ~1.19 MB and sits far below the fold, but it used to
+// carry src + autoplay on the markup, so it downloaded during initial page load
+// and competed with the hero for bandwidth. The markup now ships data-src with
+// preload="none"; we attach the real source once the element is within 400px of
+// the viewport, and wait for enough buffered data before starting playback so
+// the first frames are never a blank box.
+const heroVideos = document.querySelectorAll("video[data-src]");
+
+if (heroVideos.length) {
+  const loadVideo = (video) => {
+    if (video.dataset.loaded === "true") return;
+    video.dataset.loaded = "true";
+
+    video.src = video.dataset.src;
+    video.load();
+
+    const startPlayback = () => {
+      const attempt = video.play();
+      if (attempt) attempt.catch(() => {});
+    };
+
+    // canplaythrough means the whole clip is buffered; otherwise fall back to a
+    // partial-data threshold so playback still starts on slow connections.
+    if (video.readyState >= 3) {
+      startPlayback();
+    } else {
+      const onReady = () => {
+        video.removeEventListener("canplay", onReady);
+        startPlayback();
+      };
+      video.addEventListener("canplay", onReady);
+      video.addEventListener(
+        "loadeddata",
+        () => {
+          if (video.readyState >= 2) startPlayback();
+        },
+        { once: true },
+      );
+    }
+  };
+
+  if ("IntersectionObserver" in window) {
+    const videoObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          loadVideo(entry.target);
+          videoObserver.unobserve(entry.target);
+        });
+      },
+      { rootMargin: "400px 0px" },
+    );
+
+    heroVideos.forEach((video) => videoObserver.observe(video));
+  } else {
+    heroVideos.forEach(loadVideo);
+  }
+}
 
 // Enhanced 3D tilt effect for cards
 document.querySelectorAll(".packaging-card").forEach((card) => {
@@ -633,23 +645,20 @@ function toggleExpand(contentId, button) {
 const readMoreBtns = document.querySelectorAll(".read-more-btn");
 
 readMoreBtns.forEach((btn) =>
-  btn.addEventListener(
-    "click",
-    btn.addEventListener("click", function () {
-      const targetId = this.getAttribute("data-expand-target");
-      const content = document.getElementById(targetId);
-      const readText = this.querySelector(".read-text");
-      const isSpanish = document.body.classList.contains("es");
+  btn.addEventListener("click", function () {
+    const targetId = this.getAttribute("data-expand-target");
+    const content = document.getElementById(targetId);
+    const readText = this.querySelector(".read-text");
+    const isSpanish = document.body.classList.contains("es");
 
-      if (content.classList.contains("expanded")) {
-        content.classList.remove("expanded");
-        this.classList.remove("expanded");
-        readText.textContent = isSpanish ? "Leer más" : "Read more";
-      } else {
-        content.classList.add("expanded");
-        this.classList.add("expanded");
-        readText.textContent = isSpanish ? "Leer menos" : "Read less";
-      }
-    }),
-  ),
+    if (content.classList.contains("expanded")) {
+      content.classList.remove("expanded");
+      this.classList.remove("expanded");
+      readText.textContent = isSpanish ? "Leer más" : "Read more";
+    } else {
+      content.classList.add("expanded");
+      this.classList.add("expanded");
+      readText.textContent = isSpanish ? "Leer menos" : "Read less";
+    }
+  }),
 );
