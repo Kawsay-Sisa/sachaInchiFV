@@ -1,4 +1,5 @@
 @import "./fonts.css";
+@import "./footer.css";
 
 @tailwind base;
 @tailwind components;
@@ -201,13 +202,6 @@ sup {
 
 .language-switch input:checked + .switch::after {
   transform: translateX(27px);
-}
-
-footer {
-  background-color: #163020;
-  color: #fff9f0;
-  text-align: center;
-  padding: 20px;
 }
 
 /** Mission Statement **/

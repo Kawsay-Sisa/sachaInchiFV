@@ -1,0 +1,171 @@
+/* Shared footer layout and typography.
+   Imported by src/style.css, src/style/about.css and src/style/mission.css so
+   the three pages cannot drift apart again.
+
+   This file deliberately sets NO background and NO text colour. Each page keeps
+   its own branding through Tailwind classes on the <footer> element: index and
+   mission are dark green, about is a cerulean gradient. Only layout and type
+   live here.
+
+   It replaces a rule that was duplicated in all three stylesheets:
+     footer { background:#163020; color:#fff9f0; text-align:center; padding:20px }
+   whose fixed padding fought the py-* / pl-* utilities and left every page with
+   asymmetric padding (left 16/64/32px, right always 20px). */
+
+.site-footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .site-footer {
+    padding: 2.2rem;
+  }
+}
+
+/* Brand | nav | social.
+
+   A grid rather than the previous `flex-1 md:w-1/3` plus a third child with no
+   width at all. That combination left the social column at a fixed 87px, which
+   has no room for the Instagram handle.
+
+   Brand and nav share the leftover space equally, which matches how they were
+   already proportioned (614px / 606px at 1440px). The social column is `auto`
+   so it takes exactly what the icon plus handle needs at any viewport, instead
+   of being pinned to a fixed third. `minmax(0, 1fr)` lets the text columns
+   shrink rather than push the social column out of the footer.
+
+   Width is capped here rather than with Tailwind's `container` utility, so all
+   three pages resolve identically regardless of what that utility does in each
+   stylesheet. */
+.site-footer__grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .site-footer__grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .site-footer__grid {
+    gap: 3rem;
+  }
+}
+
+/* Breathing room between a column's text and the vertical rule on its right,
+   and the rule itself.
+
+   The rule lives here rather than as a `md:border-r md:border-current/25`
+   utility because Tailwind v3 cannot apply an opacity modifier to
+   `currentColor`: that class is never generated, so the border silently fell
+   back to the preflight default `border-color: #e5e7eb` (gray-200) on every
+   page. Tinting from `currentColor` also means the rule picks up each page's
+   own text colour - sand on the green footers, warmSandy on about's blue -
+   instead of a hardcoded grey. */
+@media (min-width: 768px) {
+  .site-footer__brand,
+  .site-footer__nav {
+    padding-right: 2rem;
+    border-right: 1px solid currentColor;
+    border-right-color: color-mix(in srgb, currentColor 25%, transparent);
+  }
+}
+
+.site-footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.site-footer__social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.site-footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.site-footer__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
+
+/* --- Typography -----------------------------------------------------------
+   One scale for all three pages.
+
+   Sizes were stepped down after the first pass read as too heavy, most
+   noticeably at 1024px. That width was the worst case because the description
+   column is only ~316px there, so at 20px the paragraph wrapped to four lines
+   and pushed the footer to 356px tall - taller than at 1440px, where the same
+   text fits on one line.
+
+   There is no separate 1280px step: the >=1024px rule is what governs large
+   screens, so reducing it shrinks 1280px and up as well. */
+
+.site-footer__title {
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.site-footer__desc,
+.site-footer__heading,
+.site-footer__nav-link,
+.site-footer__handle {
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+}
+
+@media (min-width: 640px) {
+  .site-footer__desc,
+  .site-footer__heading,
+  .site-footer__nav-link,
+  .site-footer__handle {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-footer__desc,
+  .site-footer__heading,
+  .site-footer__nav-link,
+  .site-footer__handle {
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+  }
+}
+
+.site-footer__desc {
+  margin-top: 0.5rem;
+  font-weight: 200;
+}
+
+.site-footer__legal {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  margin-top: 2.5rem;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+@media (min-width: 1024px) {
+  .site-footer__legal {
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+  }
+}

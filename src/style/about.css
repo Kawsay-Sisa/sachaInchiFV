@@ -1,4 +1,5 @@
 @import "./fonts.css";
+@import "./footer.css";
 
 @tailwind base;
 @tailwind components;
@@ -342,13 +343,6 @@ sup {
   text-align: justify;
   line-height: 1.7;
   hyphens: auto;
-}
-
-footer {
-  background-color: #163020;
-  color: #fff9f0;
-  text-align: center;
-  padding: 20px;
 }
 
 /** Mission Statement **/

@@ -193,7 +193,7 @@ const translations = {
       parallaxTitle: "Sustainability and Impact",
       badge: "100% COMMITED",
       detailedSectionTitle:
-        "Omare uses Sustainable packaging that protects our planet",
+        "Omaré uses Sustainable packaging that protects our planet",
       detailedSectionP1:
         "At the heart of Omare Sacha Inchi products is a commitment to the planet. That's why we use bagasse paper packaging—a smarter, more sustainable alternative to traditional paper.",
       expandButton: "Read More",
@@ -371,7 +371,7 @@ const translations = {
       parallaxTitle: "Sostenibilidad e Impacto",
       badge: "100% COMPROMETIDOS",
       detailedSectionTitle:
-        "Omare utiliza empaques sostenibles que protegen nuestro planeta",
+        "Omaré utiliza empaques sostenibles que protegen nuestro planeta",
       detailedSectionP1:
         "En el corazón de los productos Omare Sacha Inchi hay un compromiso con el planeta. Por eso utilizamos empaques de papel de bagazo, una alternativa más inteligente y sostenible al papel tradicional.",
       expandButton: "Leer Más",
