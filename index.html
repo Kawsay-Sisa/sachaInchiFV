@@ -218,14 +218,10 @@
           fetchpriority="high"
           decoding="async" />
       </picture>
-      <picture class="hero-sacha-vine z-10 absolute top-0 right-0 lg:w-[21rem] lg:top-[4px]">
-        <source
-          media="(max-width: 767px)"
-          srcset="./src/assets/img/bg-hero-mobile.webp"
-        />
+      <picture class="hero-sacha-vine">
         <img
-          src="./assets/img/sachaInchi-vine.png"
-          alt=""
+          src="./assets/img/sachaInchi-vineV5.webp"
+          alt="Sacha Inchi Vine"
           fetchpriority="high"
           decoding="async" />
       </picture>
@@ -288,10 +284,56 @@
           </div>
         </div>
       </div>
+      <!-- Seed panel: a left side panel spanning the FULL height of .hero.
+           Two constraints that are easy to get wrong here, both learned the
+           hard way:
+
+           1. The height MUST be explicit. <img> is a replaced element, so
+              `top` + `bottom` + `height: auto` does NOT stretch the box the way
+              it does for a <div>. Per CSS 2.1 s10.6.4 the used height comes
+              from the intrinsic ratio instead (height = width x 1024/768), and
+              `bottom` is then discarded as over-constrained. With `bottom-0`
+              and no height this image collapsed to 272px inside a 768px hero.
+              `lg:h-full` is what actually fills it.
+
+           2. A vertical offset MUST be paired with a matching height reduction.
+              The panel is offset so its top edge sits just under the fixed
+              navbar rather than being hidden behind it (and because
+              object-position is `top`, that hidden strip would otherwise be the
+              top of the photograph). But an offset plus a full height puts the
+              bottom edge that far past the hero, spilling into #section3 and
+              covering its header -- .hero no longer clips, because it is
+              min-height and clipping could only ever hide real content. Every
+              offset added exactly its own value to the overflow: 28px with
+              `lg:top-7`, 60px with `lg:top-[3.75rem]`, 63px with a literal
+              `top-[63px]`.
+
+              So the offset costs height by design: the panel is
+              `lg:top-[var(--nav-h)]` + `lg:h-[calc(100%_-_var(--nav-h))]`,
+              running from just below the navbar to the hero's bottom edge.
+              "Starts below the navbar" and "full hero height" are mutually
+              exclusive; do not add a `top` without subtracting it from the
+              height.
+
+              The underscores are mandatory. Tailwind rewrites `_` to a space,
+              and CSS calc() requires whitespace around `-`, so
+              `calc(100%-var(--nav-h))` is a parse error and the whole
+              declaration is discarded -- which silently reverts the panel to the
+              intrinsic height from point 1 above. --nav-h: 4rem (src/style.css)
+              is the same token .hero's padding-top and the vine use, so this
+              tracks the navbar automatically.
+
+           Width stays at 20% (18% at 2xl). The box is ~346x1016 against a
+           768x1024 source at 1920px, so object-cover lands at ~0.99x (effectively
+           native). Across the range the cover scale is 0.69x at 1024px -- a
+           downscale -- rising to only 1.31x at 2560px, so the art stays sharp and
+           no larger asset is needed. Widening this panel would both soften it and
+           collide with .hero-content's z-index: 10 (this element is z-10 and
+           comes later in the DOM, so equal z-index means it paints on top). -->
       <img
         src="/assets/img/seedFlowers.webp"
         alt="sacha inchi seeds"
-        class="absolute left-[-0.9px] md:top-2 lg:top-7 w-[20%] xl:w-[20%] 2xl:w-[18%] hidden lg:block z-10 lg:h-full object-cover object-top md:mr-2 xl:mr-3 2xl:mr-5 sombra-sacha-inchi"
+        class="absolute left-[-0.9px] top-[var(--nav-h)] w-[20%] 2xl:w-[18%] hidden lg:block lg:h-[calc(100%_-_var(--nav-h))] z-10 object-cover object-top md:mr-2 xl:mr-3 2xl:mr-5 sombra-sacha-inchi"
         width="768"
         height="1024"
         decoding="async"
