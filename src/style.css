@@ -72,9 +72,6 @@ h1.logo {
 sup {
   top: -0.3em;
 }
-/* .fixed-nav h1.logo {
-  max-width: 500px;
-} */
 
 .heroSection_languageSwitch {
   position: absolute !important;
@@ -420,10 +417,10 @@ picture.hero-bg > img {
 picture.hero-sacha-vine {
   position: absolute;
   top: max(var(--nav-h), min(8vh, 5rem));
-  right: -6px;
+  right: -5px;
   bottom: auto;
   left: auto;
-  width: clamp(9rem, 21vw, 21rem);
+  width: clamp(12rem, 21vw, 21rem);
   z-index: 2;
   pointer-events: none;
 }
