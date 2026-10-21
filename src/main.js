@@ -181,13 +181,16 @@ const translations = {
       product1_2Description: "Almonds and Dehydrated Banana Slices.",
       product2Title: "BOOST YOUR ENERGY NATURALLY",
       product2Badge: "Omega & Protein",
-      product2Description: "Level up your snack game with  ",
-      product2_strongDescription: "Sacha Inchi Seeds Roasted with Sea Salt",
+      product2Description: "Level up your snack game with",
+      product2_strongDescription: "Roasted Sacha Inchi Seeds with Sea Salt",
       product2_2Description: "that nutritious power house!.",
       product3Title: "THE PERFECT GUILT FREE SNACK",
       product3Badge: "OMEGA & PROTEIN",
       product3Description: "Crunchy Sacha Inchi seeds covered with",
       product3_strongDescription: "Delicious 60% Dark Chocolate.",
+      product1BackLabel: "What's inside",
+      product2BackLabel: "What's inside",
+      product3BackLabel: "What's inside",
     },
     infoSection5: {
       parallaxTitle: "Sustainability and Impact",
@@ -366,6 +369,9 @@ const translations = {
       product3Badge: "OMEGA & PROTEÍNA",
       product3Description: "Crujientes semillas de Sacha Inchi bañadas en",
       product3_strongDescription: "Delicioso Chocolate Negro al 60%.",
+      product1BackLabel: "Lo que hay dentro",
+      product2BackLabel: "Lo que hay dentro",
+      product3BackLabel: "Lo que hay dentro",
     },
     infoSection5: {
       parallaxTitle: "Sostenibilidad e Impacto",
@@ -526,6 +532,35 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(".section-reveal").forEach((el) => {
   observer.observe(el);
+});
+
+const packagingCards = document.querySelectorAll(".packaging-card");
+const canHover = window.matchMedia("(hover: hover) and (pointer: fine)");
+
+packagingCards.forEach((card) => {
+  let lastPointerType = "";
+
+  const toggleCard = () => {
+    const isFlipped = card.classList.toggle("is-flipped");
+    card.setAttribute("aria-expanded", String(isFlipped));
+  };
+
+  card.addEventListener("pointerdown", (event) => {
+    lastPointerType = event.pointerType;
+  });
+
+  card.addEventListener("click", (event) => {
+    if (event.detail === 0 || lastPointerType === "touch" || !canHover.matches) {
+      toggleCard();
+      lastPointerType = "";
+    }
+  });
+
+  card.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter" && event.key !== " ") return;
+    event.preventDefault();
+    toggleCard();
+  });
 });
 
 // Deferred hero video.
