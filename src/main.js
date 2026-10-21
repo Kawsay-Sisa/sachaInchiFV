@@ -588,29 +588,6 @@ if (heroVideos.length) {
   }
 }
 
-// Enhanced 3D tilt effect for cards
-document.querySelectorAll(".packaging-card").forEach((card) => {
-  card.addEventListener("mousemove", (e) => {
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-
-    const rotateX = (y - centerY) / 10;
-    const rotateY = (centerX - x) / 10;
-
-    const inner = card.querySelector(".card-inner");
-    inner.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
-  });
-
-  card.addEventListener("mouseleave", () => {
-    const inner = card.querySelector(".card-inner");
-    inner.style.transform = "rotateX(0) rotateY(0) scale(1)";
-  });
-});
-
 // Parallax effect for decorative elements
 document.addEventListener("mousemove", (e) => {
   const leaves = document.querySelectorAll(".leaf-decoration");
