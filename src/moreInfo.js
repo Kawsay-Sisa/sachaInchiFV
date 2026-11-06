@@ -158,6 +158,10 @@ const translations = {
       tableCaption: "Nutritional information per serving (50 g)",
       tableFootnote:
         "*The % Daily Value tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.",
+      keyOmega3: "Omega 3 (ALA)",
+      keyProtein: "Protein",
+      keyFiber: "Dietary Fiber",
+      keyMagnesium: "Magnesium",
     },
     infoSection4: {
       title: "Sacha Inchi: A Superior Source of Healthy Fats (Omega 3, 6)",
@@ -318,6 +322,10 @@ const translations = {
       tableCaption: "Información nutricional por porción (50 g)",
       tableFootnote:
         "*El % del Valor Diario indica cuánto contribuye un nutriente en una porción de alimento a una dieta diaria. Se utiliza una dieta de 2,000 calorías para el consejo nutricional general.",
+      keyOmega3: "Omega 3 (ALA)",
+      keyProtein: "Proteína",
+      keyFiber: "Fibra Dietética",
+      keyMagnesium: "Magnesio",
     },
     infoSection4: {
       title:

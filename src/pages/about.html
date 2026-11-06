@@ -268,10 +268,10 @@
             Nutritional Powerhouse
           </h3>
           <div
-            class="nutritionalTableContainer lg:mt-6 flex flex-col gap-4 md:flex-row lg:gap-6 xl:pt-5 w-full"
+            class="nutritionalTableContainer lg:mt-6 flex flex-col gap-4 md:flex-row md:items-start lg:gap-6 xl:pt-5 w-full"
           >
             <div
-              class="table1 md:w-[50%] rounded-lg overflow-hidden flex flex-col justify-start lg:gap-10 xl:gap-16"
+              class="table1 md:w-[50%] rounded-lg flex flex-col justify-start md:sticky md:top-20 lg:top-24 md:self-start lg:h-fit lg:gap-10 xl:gap-16"
             >
               <p
                 class="mt-5 lg:mt-0 sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-left pl-1 md:self-center text-bodyText font-normal lg:pl-2"
@@ -286,13 +286,51 @@
               <img
                 src="/assets/img/womanCooking.webp"
                 alt="woman cooking"
-                class="w-full h-auto xl:h-auto rounded-lg object-cover mt-4"
+                class="w-full h-auto xl:h-auto lg:max-h-[520px] rounded-lg object-cover mt-4"
               />
+              <div
+                class="mt-4 grid grid-cols-2 gap-2 rounded-lg bg-white/90 p-3 shadow-lg"
+              >
+                <div class="text-center">
+                  <p class="text-lg font-bold text-navyBlue">7.82 g</p>
+                  <p
+                    class="text-[0.65rem] uppercase tracking-wide text-bodyText"
+                    data-role="keyOmega3"
+                  >
+                    Omega 3 (ALA)
+                  </p>
+                </div>
+                <div class="text-center">
+                  <p class="text-lg font-bold text-navyBlue">14.76 g</p>
+                  <p
+                    class="text-[0.65rem] uppercase tracking-wide text-bodyText"
+                    data-role="keyProtein"
+                  >
+                    Protein
+                  </p>
+                </div>
+                <div class="text-center">
+                  <p class="text-lg font-bold text-navyBlue">3.47 g</p>
+                  <p
+                    class="text-[0.65rem] uppercase tracking-wide text-bodyText"
+                    data-role="keyFiber"
+                  >
+                    Dietary Fiber
+                  </p>
+                </div>
+                <div class="text-center">
+                  <p class="text-lg font-bold text-navyBlue">157 mg</p>
+                  <p
+                    class="text-[0.65rem] uppercase tracking-wide text-bodyText"
+                    data-role="keyMagnesium"
+                  >
+                    Magnesium
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="table2 md:w-[50%]">
-              <div
-                class="transform transition-transform duration-300 lg:hover:scale-105"
-              >
+              <div>
                 <div
                   class="overflow-x-auto rounded-lg shadow-lg border border-navyBlue bg-cerulean-navy"
                 >
@@ -309,24 +347,26 @@
                     1 serving per container • Serving size 1.75 oz (50 g)
                   </p>
                   <table
-                    class="min-w-full table-auto text-bodyText text-center bg-[#f7faf3]"
+                    class="min-w-full table-auto text-sm lg:text-base text-bodyText text-center bg-[#f7faf3]"
                   >
-                    <thead class="bg-cerulean-navy text-[#fff9f0] text-lg">
+                    <thead
+                      class="bg-cerulean-navy text-[#fff9f0] text-base lg:text-lg"
+                    >
                       <tr>
                         <th
-                          class="px-4 py-3 border-b border-[#d1d6a8] font-semibold"
+                          class="px-3 py-2 border-b border-[#d1d6a8] font-semibold"
                           data-role="colNutrient"
                         >
                           Nutrient Information
                         </th>
                         <th
-                          class="px-4 py-3 border-b border-[#d1d6a8] font-semibold"
+                          class="px-3 py-2 border-b border-[#d1d6a8] font-semibold"
                           data-role="colAmount"
                         >
                           Amount per Serving
                         </th>
                         <th
-                          class="px-4 py-3 border-b border-[#d1d6a8] font-semibold"
+                          class="px-3 py-2 border-b border-[#d1d6a8] font-semibold"
                           data-role="colDV"
                         >
                           % Daily Value*
@@ -336,250 +376,250 @@
                     <tbody>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-4 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-4 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="calories"
                         >
                           Calories
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">287</td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">—</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">287</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">—</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-4 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-4 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="totalFat"
                         >
                           Total Fat
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">
                           23.21 g
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">30%</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">30%</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-8 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-8 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="saturatedFat"
                         >
                           Saturated Fat
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">0 g</td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">0%</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">0 g</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">0%</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-8 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-8 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="transFat"
                         >
                           Trans Fat
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">0 g</td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">—</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">0 g</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">—</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-8 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-8 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="polyunsaturatedFat"
                         >
                           Polyunsaturated Fat
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">
                           19.33 g
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">—</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">—</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-12 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-12 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="omega3"
                         >
                           Omega 3 (ALA)
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">
                           7.82 g
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">—</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">—</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-12 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-12 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="omega6"
                         >
                           Omega 6 (LA)
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">
                           7.17 g
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">—</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">—</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-12 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-12 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="omega9"
                         >
                           Omega 9 (OA)
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">
                           2.17 g
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">—</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">—</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-4 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-4 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="cholesterol"
                         >
                           Cholesterol
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">0 mg</td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">0%</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">0 mg</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">0%</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-4 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-4 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="sodium"
                         >
                           Sodium
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">
                           285 mg
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">12%</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">12%</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-4 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-4 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="totalCarbohydrate"
                         >
                           Total Carbohydrate
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">
                           4.84 g
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">2%</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">2%</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-8 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-8 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="dietaryFiber"
                         >
                           Dietary Fiber
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">
                           3.47 g
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">12%</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">12%</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-8 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-8 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="totalSugars"
                         >
                           Total Sugars
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">0 g</td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">—</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">0 g</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">—</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-12 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-12 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="addedSugars"
                         >
                           Includes 0 g Added Sugars
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">—</td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">0%</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">—</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">0%</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-4 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-4 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="protein"
                         >
                           Protein
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">
                           14.76 g
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">—</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">—</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-4 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-4 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="vitaminD"
                         >
                           Vitamin D
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">
                           0 mcg
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">0%</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">0%</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-4 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-4 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="calcium"
                         >
                           Calcium
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">
                           118 mg
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">9%</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">9%</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-4 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-4 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="iron"
                         >
                           Iron
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">5 mg</td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">28%</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">5 mg</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">28%</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-4 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-4 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="potassium"
                         >
                           Potassium
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">
                           272 mg
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">6%</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">6%</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-4 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-4 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="magnesium"
                         >
                           Magnesium
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">
                           157 mg
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">37%</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">37%</td>
                       </tr>
                       <tr class="hover:bg-powderBlue even:bg-iceBlue">
                         <td
-                          class="text-left pl-4 px-2 py-2 border-b border-[#d1d6a8]"
+                          class="text-left pl-4 px-2 py-1.5 border-b border-[#d1d6a8]"
                           data-role="zinc"
                         >
                           Zinc
                         </td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">2 mg</td>
-                        <td class="px-2 py-2 border-b border-[#d1d6a8]">18%</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">2 mg</td>
+                        <td class="px-2 py-1.5 border-b border-[#d1d6a8]">18%</td>
                       </tr>
                     </tbody>
                   </table>
                   <p
-                    class="p-1 lg:p-2 text-center text-cream text-sm lg:text-lg"
+                    class="px-2 py-1 text-center text-cream text-xs lg:text-sm leading-snug"
                     data-role="tableCaption"
                   >
                     Nutritional information per serving (50 g)
                   </p>
                   <p
-                    class="p-1 lg:p-2 text-center text-cream text-xs lg:text-sm"
+                    class="px-2 py-1 text-center text-cream text-[0.68rem] lg:text-xs leading-snug"
                     data-role="tableFootnote"
                   >
                     *The % Daily Value tells you how much a nutrient in a
